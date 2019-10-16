@@ -1,0 +1,333 @@
+
+a {
+    color: white;
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    
+    list-style: none;
+    margin: auto;
+
+}
+
+nav ul li a {
+    padding: 0.8em 2em;
+    background-color: #cccccc;
+    text-decoration: none;
+    flex: auto;
+    flex-direction: column;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+
+}
+
+
+.button {
+    border-radius: 10px;
+    border: 2px black solid;
+    background-color: rgb(39, 72, 216);
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    box-shadow: 0em .0625em .125em 0em grey;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+caption {
+    ont-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    margin-top: .2em;
+    /*
+    can hide elemetns by using 
+    margin-left: -99000px;
+    float:left;
+    */
+    text-align: center;
+    /* */
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+h2 {
+    color: white;
+}
+
+#newAlbumTitle {
+    color: white;
+    padding: .25em 1em;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fdf5e8;
+    margin: 0;
+    padding: 0;
+
+}
+
+#wrapper {
+
+    background-color: rgb(39, 72, 216);
+    margin: 0 auto;
+}
+
+header {
+
+    padding: 0em 1em .33em 1em;
+
+}
+
+
+
+footer {
+
+    background-color: black;
+    color: white;
+}
+
+.text1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.text2 {
+
+
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+
+    background-color:rgb(39, 72, 216);
+    padding: 1em 0;
+
+}
+
+.contentRow {
+    display: flex;
+    /*align-items keeps your images' aspect ratio */
+    align-items: flex-start;
+    margin-left: 5em;
+
+}
+
+.contentRow p {
+    padding-left: 1em;
+    padding-right: 5em;
+    width: 75ch;
+}
+
+#heroImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 640px;
+
+}
+
+#socialMedia {
+    margin: 0 auto;
+    padding: 1em;
+    width: 45%;
+    max-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialMedia img {
+    max-width: 22px;
+    max-height: 22px;
+    padding: 5px;
+    display: flex;
+
+}
+
+
+
+table {
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: 'Press Start 2P', cursive;
+}
+
+td {
+    padding: .5em;
+
+}
+
+caption {
+    margin-bottom: 1.5em;
+    font-size: 1.65em;
+}
+
+tr:hover {
+    background-color: rgb(39, 72, 216);
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    align-content: space-between;
+    margin: 3em;
+    margin-top: 0;
+
+}
+
+.card .cardContent {
+    flex: 1 1 auto;
+    max-width: 300px;
+
+}
+
+.card .cardFooter {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card img {
+    width: 450px;
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.thisPage {
+    background-color: #e8edfd;
+    color: rgb(39, 72, 216);
+}
+
+
+.button:hover{
+    background-color: #e8edfd;
+    color: rgb(39, 72, 216);
+}
+
+.thisPage:hover {
+    background-color: #e8edfd;
+    color: red;
+}
+
+
+.linkGroup {
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.linkGroup a button {
+    display: flex;
+    min-width: 288px;
+    min-height: 72px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        width: 100%;
+        background-color: #77cf7f;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-size: 7em;
+    padding-bottom: .0625em;
+}
+
+
+#preOrderLinkText {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: -.6em;
+    font-size: 1.5em;
+}
+
+#bioPic {
+    border-radius: 50%;
+}
+
+#biography {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.125em;
+    text-indent: 2em;
+    padding: 1em;
+}
+
+button {
+    font-size: 2.25em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tourButton {
+    font-size: 1.5em;
+}
+
+.tourTable {
+    max-width: 780px;
+}
+
+.merchPrice {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
