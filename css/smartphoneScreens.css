@@ -1,0 +1,22 @@
+#heroImage {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 640px;
+
+}
+
+.tourTable{
+max-width: 300px;
+}
+
+
+
+h2{
+    word-break: break-all;
+}
+
+.overFlowTable{
+    max-width: 300px;
+}
