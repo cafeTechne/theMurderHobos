@@ -183,7 +183,7 @@ main {
 #socialMedia img {
     max-width: 22px;
     max-height: 22px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
 
 }
@@ -298,8 +298,9 @@ h1 {
 #preOrderLinkText {
     margin: 0px;
     padding: 0px;
-    font-family: 'Press Start 2P', cursive;
-    margin-top: -.6em;
+    padding-top: .1em;
+    margin-top: .5em;
+    font-family: 'Press Start 2P', cursive; 
     font-size: 1.5em;
 }
 
@@ -330,4 +331,8 @@ button {
 .merchPrice {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+}
+
+#socialMedia {
+    /*filter: grayscale(.1);*/
 }
