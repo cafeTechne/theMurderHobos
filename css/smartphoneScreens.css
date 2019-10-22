@@ -20,3 +20,6 @@ h2{
 .overFlowTable{
     max-width: 300px;
 }
+td{
+    overflow-wrap: break-word;
+}

@@ -23,16 +23,29 @@
         <meta property="og:site_name" content="The murderHobos! | Fantasy/RPG/D&D based Nerd Rock | Grand Rapids, Michigan" />
         <meta property="og:description" content="We are a Campy Nerd Rock band with an energetic horn section, D&D inspired Fantasy Aesthetic and fun stage show. Songs inspired by taking quests to slaughter rats in a shipyard, a bossfight with a Giant Rat named Cheesemonger, Tender Barbarian emotions, Dueling!, Troglodytes from Dimension-X, adventuring gnomes, the economic implications of selling magical boots in backwater villages, Minotaur sea chanties, Urg the Wanderer, PTSD from slaying goblins, etc." />
     
+    
+        <!--This is the CSS file for the font stack, courtesy of icomoon.io-->
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <!-- -->
+        
+        <!--These links are for the menu in the About section. Original credit for the original implementation of this menu goes to: http://www.codrops.com-->
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component2.css" />
+    
+    
         <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
         <link rel="stylesheet" media="only screen and (min-width : 320px) and (max-width : 490px)" type="text/css"
             href="css/smartphoneScreens.css">
         <link rel="stylesheet" type="text/css" media="only screen and (min-width: 491px) and (max-width: 1129px)" href="css/491to1129.css">
         <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1130px)" href="css/regularScreens.css">
     
-        <!--This is the CSS file for the font stack, courtesy of icomoon.io-->
-        <link rel="stylesheet" type="text/css" href="fonts.css">
-        <!-- -->
-        
+    
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+
         <!--This is the google font.-->
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
@@ -51,31 +64,48 @@
             <h1>The MurderHobos</h1>
             <nav>
                 <ul class="linkGroup">
-                    <a href="index.html"><button class="button">
-                            <li>Home</li>
-                        </button></a>
+                   
                     <a href="about.html"><button class="button thisPage">
-                            <li>About</li>
-                        </button></a>
-                    <a href="tour.html"><button class="button">
-                            <li>Tour</li>
-                        </button></a>
-                    <a href="music.html"><button class="button">
-                            <li>Music</li>
-                        </button></a>
-                    <a href="merch.html"><button class="button">
-                            <li>Merch</li>
-                        </button></a>
+                        <li>About</li>
+                    </button></a>
+                <a href="tour.html"><button class="button">
+                        <li>Tour</li>
+                    </button></a>
+                <a href="index.html"><button class="button">
+                        <li>Home</li>
+                    </button></a>
+                <a href="music.html"><button class="button">
+                        <li>Music</li>
+                    </button></a>
+                <a href="merch.html"><button class="button">
+                        <li>Merch</li>
+                    </button></a>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <a href="/merch.html">
-                <h4 id="preOrderLinkText">Pre-Order Soon!</h4>
-                <img id="heroImage" src="images/ManjeetVsTheJumpKickCult.jpg" alt="">
-            </a>
-
+            <div class="container">
+                <div class="component">
+                    
+                    <!-- Start Nav Structure -->
+                    <button class="cn-button" id="cn-button">Menu</button>
+                    <div class="cn-wrapper" id="cn-wrapper">
+                        <ul>
+                            <li><a href="#"><span>About</span></a></li>
+                            <li><a href="#"><span>Tutorials</span></a></li>
+                            <li><a href="#"><span>Articles</span></a></li>
+                            <li><a href="#"><span>Snippets</span></a></li>
+                            <li><a href="#"><span>Plugins</span></a></li>
+                            <li><a href="#"><span>Contact</span></a></li>
+                            <li><a href="#"><span>Follow</span></a></li>
+                         </ul>
+                    </div>
+                    <!-- End of Nav Structure -->
+                </div>
+                
+            </div><!-- /container -->
+            
         </main>
 
         <footer>
@@ -89,7 +119,10 @@
             <h3>nerd rock.</h3>
         </div>
 
+        <script src="js/polyfills.js"></script>
+        <script src="js/demo2.js"></script>
     </body>
 
 </html>
 <!--All other pictures courtesy of Creative Commons, cc: https://search.creativecommons.org/-->
+<!--Original credit for the original implementation of this menu goes to: http://www.codrops.com  see: http://tympanus.net/codrops/licensing/-->

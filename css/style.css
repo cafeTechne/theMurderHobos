@@ -2,6 +2,9 @@
 a {
     color: white;
 }
+a:hover{
+    color: red;
+}
 
 nav ul {
 
@@ -93,7 +96,8 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
+    /*text-decoration: none;*/
+    color: red;
 }
 
 a:active {
@@ -302,6 +306,7 @@ tr:hover {
 h1 {
     font-size: 7em;
     padding-bottom: .0625em;
+    font-family: 'Press Start 2P', cursive;
 }
 
 
