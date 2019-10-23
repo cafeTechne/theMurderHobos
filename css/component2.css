@@ -142,10 +142,7 @@ body {
 	width: 14.5em;
 	height: 14.5em;
 	border-radius: 50%;
-	background: black;
-	background: -webkit-radial-gradient(transparent 35%, black 35%);
-	background: -moz-radial-gradient(transparent 35%, black 35%);
-	background: radial-gradient(transparent 35%, black 35%);
+
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -172,9 +169,9 @@ body {
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-	background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
-	background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
-	background: radial-gradient(transparent 35%, #449e6a 35%);
+	background: -webkit-radial-gradient(transparent 35%, black 35%);
+	background: -moz-radial-gradient(transparent 35%, black 35%);
+	background: radial-gradient(transparent 35%, black 35%);
 }
 .csstransforms .cn-wrapper li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */

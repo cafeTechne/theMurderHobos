@@ -85,27 +85,91 @@
         </header>
 
         <main>
+            <section id="character1" class="characterProfileSection">
+                <h2>Pat's Character's story will go here when he writes it.</h2>
+            </section>
+            <section id="character2" class="characterProfileSection">
+                    <h2>Dan's Character's story will go here when he writes it.</h2>
+            </section>
+             <section id="character3" class="characterProfileSection">
+                        <h2>Lindsey's Character's story will go here when she writes it.</h2>
+            </section>
+            <section id="character4" class="characterProfileSection">
+                    <h2>JD's Character's story will go here when he writes it.</h2>
+                </section>
+                <section id="character5" class="characterProfileSection">
+                        <h2>Joe's Character's story will go here when he writes it.</h2>
+                    </section>
+                    <section id="character6" class="characterProfileSection">
+                            <h2>Brendan's Character's story will go here when he writes it.</h2>
+                        </section>
+                        <section id="character7" class="characterProfileSection">
+                                <h2>Urg is a sensitive Barbarian.</h2>
+                            </section>
             <div class="container">
                 <div class="component">
                     
                     <!-- Start Nav Structure -->
-                    <button class="cn-button" id="cn-button">Menu</button>
+                    <button class="cn-button" id="cn-button">*</button>
                     <div class="cn-wrapper" id="cn-wrapper">
                         <ul>
-                            <li><a href="#"><span>About</span></a></li>
-                            <li><a href="#"><span>Tutorials</span></a></li>
-                            <li><a href="#"><span>Articles</span></a></li>
-                            <li><a href="#"><span>Snippets</span></a></li>
-                            <li><a href="#"><span>Plugins</span></a></li>
-                            <li><a href="#"><span>Contact</span></a></li>
-                            <li><a href="#"><span>Follow</span></a></li>
+                            <li><a href="#" onclick="getCharacterInformation(`Pat`)" ><span></span>
+                                <picture>
+                                        <source media="(min-width: 120px)" srcset="images/pat_sprite.png" class="characterProfilePicture">
+                                        <img src="images/pat_sprite.png" alt="The bard idly strums his bass lyre." style="width:auto;" class="characterProfilePicture">
+                                </picture>
+                            </a>
+                        </li>
+                            <li><a href="#" onclick="getCharacterInformation(`Dan`)"><span></span>
+                                <picture>
+                                        <source media="(min-width: 120px)" srcset="images/dan_sprite.png" class="characterProfilePicture">
+                                        <img src="images/dan_sprite.png" alt="This guy plays accordion. That is cool." style="width:auto;" class="characterProfilePicture">
+                                </picture>
+                                </a>
+                            </li>
+                            <li><a href="#" onclick="getCharacterInformation(`Lindsey`)"><span></span>
+                                <picture>
+                                        <source media="(min-width: 120px)" srcset="images/lindsey_sprite.png" class="characterProfilePicture">
+                                        <img src="images/lindsey_sprite.png" alt="The woman with brown hair standing before you sizes you up and puffs out her chest proudly." style="width:auto;" class="characterProfilePicture">
+                                </picture>
+                            </a>
+                        </li>
+                            <li><a href="#" onclick="getCharacterInformation(`JD`)">
+                                    <span></span>
+                                    <picture>
+                                            <source media="(min-width: 120px)" srcset="images/eregmoth_two-knives.png" class="characterProfilePicture">
+                                            <img src="images/eregmoth_two-knives.png" alt="Eregmoth stands boldly before you with a dark hood and a circlet about his forehead. He brandishes two daggers with his chest jutted out towards you." style="width:auto;" class="characterProfilePicture">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li><a href="#" onclick="getCharacterInformation(`Joe`)"><span></span>
+                                <picture>
+                                        <source media="(min-width: 120px)" srcset="images/joe_sprite.png" class="characterProfilePicture">
+                                        <img src="images/joe_sprite.png" alt="Joe's bald head glimmers in the light, nearly blinding you. This guy is definitely the drummer." style="width:auto;" class="characterProfilePicture">
+                                </picture>
+                            </a></li>
+                            <li>
+                                <a href="#" onclick="getCharacterInformation(`Garth`)"><span></span>
+                                    <picture>
+                                            <source media="(min-width: 120px)" srcset="images/garth_the_green_sprite.png" class="characterProfilePicture">
+                                            <img src="images/garth_the_green_sprite.png" alt="Eregmoth stands boldly before you with a dark hood and a circlet about his forehead. He brandishes two daggers with his chest jutted out towards you." style="width:auto;" class="characterProfilePicture">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li><a href="#" onclick="getCharacterInformation(`Urg`)"><span></span>
+                                <picture>
+                                        <source media="(min-width: 120px)" srcset="images/urg_sprite.png" class="characterProfilePicture">
+                                        <img src="images/urg_sprite.png" alt="Urg lifts his blade high into the sky with his left hand as a look of exhultation washes over his face." style="width:auto;" class="characterProfilePicture">
+                                </picture>
+                                </a>
+                            </li>
                          </ul>
                     </div>
                     <!-- End of Nav Structure -->
                 </div>
                 
             </div><!-- /container -->
-            
+
         </main>
 
         <footer>
@@ -121,6 +185,42 @@
 
         <script src="js/polyfills.js"></script>
         <script src="js/demo2.js"></script>
+        <script>
+
+        var character1 = window.document.getElementById("character1");
+        var character2 = window.document.getElementById("character2");
+        var character3 = window.document.getElementById("character3");            var character4 = window.document.getElementById("character4");
+        var character5 = window.document.getElementById("character5");
+        var character6 = window.document.getElementById("character6");
+        var character7 = window.document.getElementById("character7");
+
+
+        function hideAllSections(){
+
+            character1.style.display = "none";
+            character2.style.display = "none";
+            character3.style.display = "none";
+            character4.style.display = "none";
+            character5.style.display = "none";
+            character6.style.display = "none";
+            character7.style.display = "none";
+        }
+
+
+        function getCharacterInformation(characterName){
+            if(characterName == "Pat") {hideAllSections(); character1.style.display = "block"; }
+            if(characterName == "Dan") {hideAllSections(); character2.style.display = "block"; }
+            if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block"; }
+            if(characterName == "JD") {hideAllSections(); character4.style.display = "block"; }
+            if(characterName == "Joe") {hideAllSections(); character5.style.display = "block"; }
+            if(characterName == "Garth") {hideAllSections(); character6.style.display = "block"; }
+            if(characterName == "Urg") {hideAllSections(); character7.style.display = "block"; }
+        }
+        
+
+        setTimeout(function clickOnStart(){document.getElementById("cn-button").click();}, 200);
+            
+        </script>
     </body>
 
 </html>

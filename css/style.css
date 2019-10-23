@@ -298,7 +298,7 @@ tr:hover {
 @media only screen and (max-width: 600px) {
     #wrapper {
         width: 100%;
-        background-color: #77cf7f;
+        background-color: #93c572;
         margin: 0 auto;
     }
 }
@@ -357,4 +357,13 @@ button {
 }
 #indexMain{
     background-color:black;
+}
+
+.characterProfilePicture{
+    position: relative;
+    z-index: 10;
+}
+
+.characterProfileSection{
+    display: none;
 }
