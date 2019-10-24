@@ -23,3 +23,13 @@ h2{
 td{
     overflow-wrap: break-word;
 }
+tbody{
+}
+#definition{
+    text-align: left;
+    margin: 2em;
+    position: relative;
+    width: 89%;
+    left: 50%;
+    
+}

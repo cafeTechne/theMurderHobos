@@ -68,7 +68,7 @@ caption {
     word-wrap: break-word;
 }
 
-h2 {
+h2,h3 {
     color: white;
 }
 
@@ -367,3 +367,34 @@ button {
 .characterProfileSection{
     display: none;
 }
+
+.displayed {
+    opacity: 1;
+    transition: opacity 1s, height 0;
+    display: block;
+  }
+  
+.hidden {
+    opacity: 0;
+    transition: opacity 1s, height 0 1s;
+    height: 0;
+  }
+#definition{
+    position: relative;
+    text-align: left;
+    left: 33%;
+    width: 33%;
+}
+#definitionBody{
+position:block;
+}
+
+.definitionKeyWord{
+    position:block;
+    color: red;
+}
+.genreLabelOnFooter{
+    position: block;
+    color: black;
+}
+  
