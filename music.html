@@ -49,33 +49,13 @@
     <body>
         <header>
             <h1>The MurderHobos</h1>
-            <nav>
-                <ul class="linkGroup">
-                   
-                    <a href="about.html"><button class="button">
-                        <li>About</li>
-                    </button></a>
-                <a href="tour.html"><button class="button">
-                        <li>Tour</li>
-                    </button></a>
-                <a href="index.html"><button class="button">
-                        <li>Home</li>
-                    </button></a>
-                <a href="music.html"><button class="button thisPage">
-                        <li>Music</li>
-                    </button></a>
-                <a href="merch.html"><button class="button">
-                        <li>Merch</li>
-                    </button></a>
-                </ul>
-            </nav>
         </header>
         <main>
-            <h2>Song List</h2>    
+            <h2 id="songListTitle">Song List</h2>    
         <div class="cardRow">
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="/music/TheInnOfTheHornyUnicorn_3OCT2019.wav" download>The Inn of the Horny Unicorn</a></h3>
                     <audio controls>
                         <source src = "/music/TheInnOfTheHornyUnicorn_3OCT2019.wav" type = "audio/wav">
@@ -84,7 +64,7 @@
             </div>
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/RatQuest_3OCT2019_session.wav" download>Rat Quest!: Slaughter in the Shipyard!</a></h3>
                     <audio controls>
                         <source src = "/music/RatQuest_3OCT2019_session.wav" type = "audio/wav">
@@ -93,7 +73,7 @@
             </div>
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/cheeseMonger.wav" download>Enter the Cheesemonger!</a></h3>
                     <audio controls>
                         <source src = "/music/cheeseMonger.wav" type = "audio/wav">
@@ -102,7 +82,7 @@
             </div>
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/SellingPelts_3OCT2019_session.wav" download>Selling Pelts at the Tannery: A Barbarian Tale of Unrequited Love</a></h3>
                     <audio controls>
                         <source src = "/music/SellingPelts_3OCT2019_session.wav" type = "audio/wav">
@@ -111,16 +91,16 @@
             </div>
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
-                    <h3><a href="music/murderhobos.mp3" download>The Duel! (starts around 30 seconds, very rough take)</a></h3>
+                    <img class="songImage" src="images/" alt="">
+                    <h3><a href="music/TheDuel_session.wav" download>The Duel! (starts around 30 seconds, very rough take)</a></h3>
                     <audio controls>
-                        <source src = "/music/murderhobos.mp3" type = "audio/wav">
+                        <source src = "music/TheDuel_session.wav" type = "audio/wav">
                      </audio>
                 </div>
             </div>
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/Riding to the Temple of the Radiant Pool of the Beholder_session.wav" download>Riding to the Temple of the Radiant Pool of the Beholder!</a></h3>
                     <audio controls>
                         <source src = "/music/Riding to the Temple of the Radiant Pool of the Beholder_session.wav" type = "audio/wav">
@@ -129,7 +109,7 @@
             </div> 
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/Troglodytes from Dimension-X_session.wav" download>Troglodytes from Dimension-X!</a></h3>
                     <audio controls>
                         <source src = "/music/Troglodytes from Dimension-X_session.wav" type = "audio/wav">
@@ -138,7 +118,7 @@
             </div> 
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <a href="https://projectmultiplexer.com/2014/09/07/on-the-unloading-a-pair-of-magic-boots-and-troubles-therein/" class="href">
                     <h3>*Ballad of the Multiplexer: On the Economic Implications of unloading a pair of magical boots!</h3>
                 </a>
@@ -146,13 +126,13 @@
             </div> 
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="" download>Urg the Wanderer ( Recording scratch track this week 25 OCT 2019 )</a></h3>
                 </div>
             </div> 
             <div class="card">
                 <div class="cardContent">
-                    <img src="images/" alt="">
+                    <img class="songImage" src="images/" alt="">
                     <h3><a href="music/pleaseDoNotMurderHobos.wav" download>Please Don't Murder Hobos! <br><br>*(Actual version is all ska, need Branden to upload it to Slack and tag me once it's done!)</a></h3>
                     <audio controls>
                         <source src = "/music/pleaseDoNotMurderHobos.wav" type = "audio/wav">
@@ -163,6 +143,27 @@
     </main>
 
         <footer>
+
+                <nav id="mobileNavFooter">
+                        <ul class="linkGroup">
+                           
+                            <a href="about.html"><button class="button">
+                                <li>About</li>
+                            </button></a>
+                        <a href="tour.html"><button class="button">
+                                <li>Tour</li>
+                            </button></a>
+                        <a href="index.html"><button class="button">
+                                <li>Home</li>
+                            </button></a>
+                        <a href="music.html"><button class="button thisPage">
+                                <li>Music</li>
+                            </button></a>
+                        <a href="merch.html"><button class="button">
+                                <li>Merch</li>
+                            </button></a>
+                        </ul>
+                    </nav>
             <div id="socialMedia">
                 <a href="www.snapchat.com/the-murderhobos"><img src="images/socialMediaIcon_faceBook.gif" alt="facebook social media link"></a>
                 <a href="www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif" alt="twitter social media link"></a>

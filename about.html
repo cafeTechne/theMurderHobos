@@ -62,49 +62,33 @@
     <body>
         <header>
             <h1>The MurderHobos</h1>
-            <nav>
-                <ul class="linkGroup">
-                   
-                    <a href="about.html"><button class="button thisPage">
-                        <li>About</li>
-                    </button></a>
-                <a href="tour.html"><button class="button">
-                        <li>Tour</li>
-                    </button></a>
-                <a href="index.html"><button class="button">
-                        <li>Home</li>
-                    </button></a>
-                <a href="music.html"><button class="button">
-                        <li>Music</li>
-                    </button></a>
-                <a href="merch.html"><button class="button">
-                        <li>Merch</li>
-                    </button></a>
-                </ul>
-            </nav>
         </header>
 
         <main>
+
+                <section id="instructionsForAboutPage" class="characterProfileSection">
+                        <h2 class="characterNarrative">Click or Touch an Adventurer to learn more about them!</h2>
+                    </section>
             <section id="character1" class="characterProfileSection">
-                <h2>Pat's Character's story will go here when he writes it.</h2>
+                <h2 class="characterNarrative">Pat's Character's story will go here when he writes it.</h2>
             </section>
             <section id="character2" class="characterProfileSection">
-                    <h2>Dan's Character's story will go here when he writes it.</h2>
+                    <h2 class="characterNarrative">Dan's Character's story will go here when he writes it.</h2>
             </section>
              <section id="character3" class="characterProfileSection">
-                        <h2>Lindsey's Character's story will go here when she writes it.</h2>
+                        <h2 class="characterNarrative">Lindsey's Character's story will go here when she writes it.</h2>
             </section>
             <section id="character4" class="characterProfileSection">
-                    <h2>JD's Character's story will go here when he writes it.</h2>
+                    <h2 class="characterNarrative">JD's Character's story will go here when he writes it.</h2>
                 </section>
                 <section id="character5" class="characterProfileSection">
-                        <h2>Joe's Character's story will go here when he writes it.</h2>
+                        <h2 class="characterNarrative">Joe's Character's story will go here when he writes it.</h2>
                     </section>
                     <section id="character6" class="characterProfileSection">
-                            <h2>Brendan's Character's story will go here when he writes it.</h2>
+                            <h2 class="characterNarrative">Brendan's Character's story will go here when he writes it.</h2>
                         </section>
                         <section id="character7" class="characterProfileSection">
-                                <h2>Urg is a sensitive Barbarian.</h2>
+                                <h2 class="characterNarrative">Urg is a sensitive Barbarian.</h2>
                             </section>
             <div class="container">
                 <div class="component">
@@ -173,6 +157,26 @@
         </main>
 
         <footer>
+                <nav id="mobileNavFooter">
+                        <ul class="linkGroup">
+                           
+                            <a href="about.html"><button class="button thisPage">
+                                <li>About</li>
+                            </button></a>
+                        <a href="tour.html"><button class="button">
+                                <li>Tour</li>
+                            </button></a>
+                        <a href="index.html"><button class="button">
+                                <li>Home</li>
+                            </button></a>
+                        <a href="music.html"><button class="button">
+                                <li>Music</li>
+                            </button></a>
+                        <a href="merch.html"><button class="button">
+                                <li>Merch</li>
+                            </button></a>
+                        </ul>
+                    </nav>
             <div id="socialMedia">
                 <a href="www.snapchat.com/the-murderhobos"><img src="images/socialMediaIcon_faceBook.gif" alt="facebook social media link"></a>
                 <a href="www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif" alt="twitter social media link"></a>
@@ -180,49 +184,15 @@
             </div>
         </footer>
         <div>
-            <h3>nerd rock.</h3>
+            <h3 class="genreLabelOnFooter">nerd rock.</h3>
         </div>
 
         <script src="js/polyfills.js"></script>
         <script src="js/demo2.js"></script>
-        <script>
-
-        var character1 = window.document.getElementById("character1");
-        var character2 = window.document.getElementById("character2");
-        var character3 = window.document.getElementById("character3");            var character4 = window.document.getElementById("character4");
-        var character5 = window.document.getElementById("character5");
-        var character6 = window.document.getElementById("character6");
-        var character7 = window.document.getElementById("character7");
-
-
-        function hideAllSections(){
-
-            character1.style.display = "none";
-            character2.style.display = "none";
-            character3.style.display = "none";
-            character4.style.display = "none";
-            character5.style.display = "none";
-            character6.style.display = "none";
-            character7.style.display = "none";
-        }
-
-
-        function getCharacterInformation(characterName){
-            if(characterName == "Pat") {hideAllSections(); character1.style.display = "block"; }
-            if(characterName == "Dan") {hideAllSections(); character2.style.display = "block"; }
-            if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block"; }
-            if(characterName == "JD") {hideAllSections(); character4.style.display = "block"; }
-            if(characterName == "Joe") {hideAllSections(); character5.style.display = "block"; }
-            if(characterName == "Garth") {hideAllSections(); character6.style.display = "block"; }
-            if(characterName == "Urg") {hideAllSections(); character7.style.display = "block"; }
-        }
-        
-
-        setTimeout(function clickOnStart(){document.getElementById("cn-button").click();}, 200);
-            
-        </script>
+        <script src="js/scriptz.js"></script>
     </body>
 
 </html>
 <!--All other pictures courtesy of Creative Commons, cc: https://search.creativecommons.org/-->
 <!--Original credit for the original implementation of this menu goes to: http://www.codrops.com  see: http://tympanus.net/codrops/licensing/-->
+<!--Sprites are done by Jason Perry at https://finalbossblues.itch.io/  && https://www.patreon.com/finalbossblues -->

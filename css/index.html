@@ -36,6 +36,8 @@
         <!--This is the google font.-->
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
+        <!-- TODO: Google Analytics Tracking -->
+
         <style>
             html {
                 font-family: 'Press Start 2P', cursive;
@@ -49,95 +51,44 @@
     <body>
         <header>
             <h1>The MurderHobos</h1>
+            <nav>
+                <ul class="linkGroup">
+
+                    <a href="about.html"><button class="button">
+                            <li>About</li>
+                        </button></a>
+                    <a href="tour.html"><button class="button">
+                            <li>Tour</li>
+                        </button></a>
+                    <a href="index.html"><button class="button thisPage">
+                            <li>Home</li>
+                        </button></a>
+                    <a href="music.html"><button class="button">
+                            <li>Music</li>
+                        </button></a>
+                    <a href="merch.html"><button class="button">
+                            <li>Merch</li>
+                        </button></a>
+                </ul>
+            </nav>
         </header>
 
-        <main>
-                <h2 id="tourScheduleHeader">Tour Schedule</h2>
-                <div  class="overFlowTable">
-            <table class="tourTable">
-                <caption>
-                    <h2>Winter Tour 2020</h2>
-                </caption>
-                <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">City</th>
-                    <th scope="col">Venue</th>
-                    <th scope="col">Tickets</th>
-                </tr>
-                <tr>
-                    <td>11/18/20</td>
-                    <td>Annapolis, MD</td>
-                    <td>Ram's Head</td>
-                    <td><button class="button3 tourButton" onclick="window.alert(`Tickets are not on sale yet!`)">Buy Tickets</button></td>
-                </tr>
-                <tr>
-                    <td>11/19/20</td>
-                    <td>New York, NY</td>
-                    <td>Irving Plaza</td>
-                    <td><button class="button3 tourButton" onclick="window.alert(`Tickets are not on sale yet!`)">Buy Tickets</button></td>
-                </tr>
-                <tr>
-                    <td>11/21/20</td>
-                    <td>Grand Rapids, MI</td>
-                    <td>Mulligans!</td>
-                    <td><button class="button3 tourButton" onclick="window.alert(`Tickets are not on sale yet!`)">Buy Tickets</button></td>
-                </tr>
+        <main id="indexMain">
+            <h3 id="definition">Noun. murderhobo (plural murderhobos or murderhoboes) (role-playing games, derogatory slang) A player character who wanders the gameworld, unattached to any community, indiscriminately killing and looting.</h3>
+            <a>
+                <img id="heroImage" src="images/murderHoboHomeHero.jpg" alt="">
+                <h4 id="preOrderLinkText">Album in 2020!</h4>
+            </a>
 
-            </table>
-        </div>
-        <div>
-                <div class="cardRow">
-                        <div class="card tourCard" onclick="itemNotAvailable();">
-                            <div class="cardContent">
-                                    <div class="tourDate">11/21/20<div>
-                                    <div class="tourLocation">Grand Rapids, MI</div>
-                                    <div class="tourVenue">Mulligans!</div>
-                                <button class="button3 tourButton" onclick="window.alert(`Tickets are not on sale yet!`)">Buy Tickets</button>
-                            </div>
-                            <div class="cardFooter"></div>
-                        </div>
-                        <div class="card" onclick="itemNotAvailable();">
-                            <div class="cardContent tourCard">
-                                
-                            </div>
-                            <div class="cardFooter"></div>
-                        </div>
-                        <div class="card" onclick="itemNotAvailable();">
-                            <div class="cardContent tourCard">
-                                
-                            </div>
-                            <div class="cardFooter"></div>
-                        </div>    
-                    </div>
-        </div>
         </main>
 
-
         <footer>
-            
-                <nav id="mobileNavFooter">
-                        <ul class="linkGroup">
-                            <a href="about.html"><button class="button">
-                                <li>About</li>
-                            </button></a>
-                        <a href="tour.html"><button class="button thisPage">
-                                <li>Tour</li>
-                            </button></a>
-                        <a href="index.html"><button class="button">
-                                <li>Home</li>
-                            </button></a>
-                        <a href="music.html"><button class="button">
-                                <li>Music</li>
-                            </button></a>
-                        <a href="merch.html"><button class="button">
-                                <li>Merch</li>
-                            </button></a>
-                        </ul>
-                    </nav>
             <div id="socialMedia">
                 <a href="www.snapchat.com/the-murderhobos"><img src="images/socialMediaIcon_faceBook.gif" alt="facebook social media link"></a>
                 <a href="www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif" alt="twitter social media link"></a>
                 <a href="www.instagram.com/the-murderhobos"><img src="images/socialMediaIcon_instagram.png" alt="instagram social media link"></a>
+                <a href="www.twitch.com/the-murderhobos"><img src="images/socialMediaIcon_twitch.png" alt="twitch social media link"></a>
+                <a href="www.soundcloud.com/the-murderhobos"><img src="images/socialMediaIcon_soundCloud.png" alt="soundCloud social media link"></a>
             </div>
         </footer>
         <div>
@@ -148,3 +99,5 @@
 
 </html>
 <!--All other pictures courtesy of Creative Commons, cc: https://search.creativecommons.org/-->
+<!--Social Media Icons, courtesy of https://www.deviantart.com/poserfan-->
+<!--Sprites are done by Jason Perry at https://finalbossblues.itch.io/  && https://www.patreon.com/finalbossblues-->

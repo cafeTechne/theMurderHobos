@@ -49,71 +49,72 @@
     <body>
         <header>
             <h1>The MurderHobos</h1>
-            <nav>
-                <ul class="linkGroup">
-
-                    <a href="about.html"><button class="button">
-                        <li>About</li>
-                    </button></a>
-                <a href="tour.html"><button class="button">
-                        <li>Tour</li>
-                    </button></a>
-                <a href="index.html"><button class="button">
-                        <li>Home</li>
-                    </button></a>
-                <a href="music.html"><button class="button">
-                        <li>Music</li>
-                    </button></a>
-                <a href="merch.html"><button class="button thisPage">
-                        <li>Merch</li>
-                    </button></a>
-                </ul>
-            </nav>
         </header>
 
 
         <main>
-            <h2>Merchandizing. Merchandizing. Merchandizing.</h2>
+              <h2 id="merchandizingLogo">Merchandizing. Merchandizing. Merchandizing.</h2>
         <div class="cardRow">
-            <div class="card">
+            <div class="card" onclick="itemNotAvailable();">
                 <div class="cardContent">
-                    <img src="images/cancerTshirt.jpg" alt="">
+                    <img src="images/leprosyTshirt.jpg" alt="">
                 </div>
                 <div class="cardFooter merchPrice">$19.99</div>
             </div>
-            <div class="card">
+            <div class="card" onclick="itemNotAvailable();">
                 <div class="cardContent">
-                    <img src="images/jumpKickTshirt.jpg" alt="">
+                    <img src="images/leprosyTshirt.jpg" alt="">
                 </div>
                 <div class="cardFooter merchPrice">$19.99</div>
             </div>
-            <div class="card">
+            <div class="card" onclick="itemNotAvailable();">
                 <div class="cardContent">
-                    <img src="images/bioTshirt.jpg" alt="">
+                    <img src="images/leprosyTshirt.jpg" alt="">
                 </div>
                 <div class="cardFooter merchPrice">$19.99</div>
             </div>
-            <div class="card">
+            <div class="card" onclick="itemNotAvailable();">
                     <div class="cardContent">
-                        <img src="images/ManjeetVsTheJumpKickCult.jpg" alt="">
+                        <img src="images/tmh_vs_jumpkickcult.jpg" alt="">
                     </div>
                     <div class="cardFooter merchPrice">$9.99</div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="itemNotAvailable();">
                     <div class="cardContent">
-                        <img src="images/manjeetVsCancer.jpg" alt="">
+                        <img src="images/tmh_vs_jumpkickcult.jpg" alt="">
                     </div>
                     <div class="cardFooter merchPrice">$7.99</div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="itemNotAvailable();">
                     <div class="cardContent">
-                        <img src="images/manjeetVsJacksonHole.jpg" alt="">
+                        <img src="images/tmh_vs_jumpkickcult.jpg" alt="">
                     </div>
                     <div class="cardFooter merchPrice">$5.99</div>
                 </div>    
         </div>
     </main>
         <footer>
+
+                <nav id="mobileNavFooter">
+                        <ul class="linkGroup">
+                           
+                            <a href="about.html"><button class="button">
+                                <li>About</li>
+                            </button></a>
+                        <a href="tour.html"><button class="button">
+                                <li>Tour</li>
+                            </button></a>
+                        <a href="index.html"><button class="button">
+                                <li>Home</li>
+                            </button></a>
+                        <a href="music.html"><button class="button">
+                                <li>Music</li>
+                            </button></a>
+                        <a href="merch.html"><button class="button thisPage">
+                                <li>Merch</li>
+                            </button></a>
+                        </ul>
+                    </nav>
             <div id="socialMedia">
                 <a href="www.snapchat.com/the-murderhobos"><img src="images/socialMediaIcon_faceBook.gif" alt="facebook social media link"></a>
                 <a href="www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif" alt="twitter social media link"></a>
@@ -124,6 +125,11 @@
             <h3>nerd rock.</h3>
         </div>
 
+        <script>
+        function itemNotAvailable(){
+            window.alert("This item is not available at this time. Please try again tomorrow!");
+        }
+        </script>
     </body>
 
 </html>

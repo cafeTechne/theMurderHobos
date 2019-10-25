@@ -6,3 +6,15 @@
     max-width: 640px;
 
 }
+
+#definition{
+    text-align: left;
+    margin: 2em;
+    position: relative;
+    width: 84%;
+    left: 9%;
+    
+}
+h1{
+    display: none;
+}

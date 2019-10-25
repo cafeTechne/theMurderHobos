@@ -3,7 +3,7 @@ a {
     color: white;
 }
 a:hover{
-    color: red;
+    color: rgb(143, 255, 143);
 }
 
 nav ul {
@@ -46,6 +46,7 @@ nav ul li a:hover {
     margin: 2px 2px;
     box-shadow: 0em .0625em .125em 0em grey;
     cursor: pointer;
+    z-index:10;
 }
 
 h1,
@@ -53,7 +54,7 @@ h2,
 h3,
 h4,
 caption {
-    ont-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
     margin-top: .2em;
@@ -97,7 +98,7 @@ a:visited {
 
 a:hover {
     /*text-decoration: none;*/
-    color: red;
+    color: rgb(143, 255, 143);;
 }
 
 a:active {
@@ -272,7 +273,7 @@ tr:hover {
 
 .button:hover{
     background-color: #e8edfd;
-    color: rgb(39, 72, 216);
+    color: black;
 }
 
 .thisPage:hover {
@@ -314,10 +315,11 @@ h1 {
     margin: 0px;
     padding: 0px;
     padding-top: .1em;
-    margin-top: .5em;
+    margin-top: 1em;
     font-family: 'Press Start 2P', cursive; 
     font-size: 1.5em;
     background-color: black;
+    margin-bottom: .5em;
 }
 
 #bioPic {
@@ -338,6 +340,7 @@ button {
 
 .tourButton {
     font-size: 1.5em;
+    margin-top:.5em;
 }
 
 .tourTable {
@@ -380,10 +383,13 @@ button {
     height: 0;
   }
 #definition{
-    position: relative;
     text-align: left;
-    left: 33%;
-    width: 33%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 640px;
+
 }
 #definitionBody{
 position:block;
@@ -391,10 +397,66 @@ position:block;
 
 .definitionKeyWord{
     position:block;
-    color: red;
+    color: rgb(143, 255, 143);
 }
 .genreLabelOnFooter{
-    position: block;
+    text-align: center;
     color: black;
+    z-index: 3;
 }
-  
+.characterNarrative{
+    word-wrap: none;
+    color: rgb(143, 255, 143);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66%;
+    margin-bottom: 1rem;
+}
+#merchandizingLogo, #songListTitle{
+    text-align: center;
+    color: rgb(143, 255, 143);
+}
+#albumImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 640px;
+}
+.songImage{
+    display: none;
+}
+#tourScheduleHeader, #instructionsForAboutPage{
+    color: rgb(143, 255, 143);
+    display:block;
+    text-align: center;
+    padding-right: 10.5%;
+}
+.tourCard{
+    background-color:black;
+    max-height: 150px;
+    display: none;
+}
+.tourDate, .tourVenue, .tourLocation{
+    margin:.5em;
+    text-align: left;
+}
+.tourDate,.tourVenue{
+    text-align: center;
+    color: rgb(143, 255, 143);
+    margin-top: .5em;
+    padding-top: .5em;
+}
+.tourDate:hover, .tourVenue:hover, .tourLocation:hover{
+    margin:.5em;
+    background-color: black;
+}
+.tourLocation{
+    color: white;
+}
+#instructionsForAboutPage{
+    margin-left: 10%;
+}
+#tourScheduleHeader{
+    margin-left: 10%;
+}

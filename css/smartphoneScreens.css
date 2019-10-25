@@ -4,7 +4,6 @@
     margin-right: auto;
     width: 60%;
     max-width: 640px;
-
 }
 
 .tourTable{
@@ -14,22 +13,62 @@ max-width: 300px;
 
 
 h2{
-    word-break: break-all;
+    text-align: left;
+    margin-left: 11.01%;
+    margin-right: 11.01%;
+    font-size: .9em;
 }
 
 .overFlowTable{
-    max-width: 300px;
+    max-width: 100%;
+    display: none;
 }
 td{
     overflow-wrap: break-word;
 }
 tbody{
 }
+
 #definition{
-    text-align: left;
-    margin: 2em;
     position: relative;
-    width: 89%;
-    left: 50%;
-    
+    margin: 2em;    
+    text-align: left;
+    left: -5%;
+    width: 95%;
+}
+h1{
+    display: none;
+}
+.characterNarrative{
+    word-wrap: none;
+}
+#definitionBody{
+margin-left:5%;
+}
+.merchandizingLogo{
+    text-align: center;
+    position:relative;
+    margin-left: 33%;
+    margin-left: 5em;
+}
+#albumImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 640px;
+}
+#tourScheduleHeader{
+    display:block;
+    position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   width: 55%;
+   padding-left: 9.5%;
+}
+#mobileTourCards{
+    display:block;
+}
+.tourCard{
+    display: block;
 }
