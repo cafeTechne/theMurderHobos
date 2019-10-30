@@ -33,8 +33,8 @@ tbody{
     position: relative;
     margin: 2em;    
     text-align: left;
-    left: -5%;
-    width: 95%;
+    left: 0%;
+    width: 80%;
 }
 h1{
     display: none;
@@ -43,7 +43,7 @@ h1{
     word-wrap: none;
 }
 #definitionBody{
-margin-left:5%;
+margin-left:10%;
 }
 .merchandizingLogo{
     text-align: center;

@@ -1,8 +1,8 @@
-
 a {
     color: white;
 }
-a:hover{
+
+a:hover {
     color: rgb(143, 255, 143);
 }
 
@@ -15,7 +15,7 @@ nav ul {
 }
 
 nav ul li {
-    
+
     list-style: none;
     margin: auto;
 
@@ -38,15 +38,15 @@ nav ul li a:hover {
 .button {
     border-radius: 10px;
     border: 2px black solid;
-    background-color: rgb(39, 72, 216);
-    color: white;
+
+    color: black;
 
     text-align: center;
     text-decoration: none;
     margin: 2px 2px;
     box-shadow: 0em .0625em .125em 0em grey;
     cursor: pointer;
-    z-index:10;
+    z-index: 10;
 }
 
 h1,
@@ -69,7 +69,8 @@ caption {
     word-wrap: break-word;
 }
 
-h2,h3 {
+h2,
+h3 {
     color: white;
 }
 
@@ -98,7 +99,8 @@ a:visited {
 
 a:hover {
     /*text-decoration: none;*/
-    color: rgb(143, 255, 143);;
+    color: rgb(143, 255, 143);
+    ;
 }
 
 a:active {
@@ -147,7 +149,7 @@ footer {
 
 main {
 
-    background-color:rgb(39, 72, 216);
+    background-color: rgb(39, 72, 216);
     padding: 1em 0;
 
 }
@@ -267,11 +269,11 @@ tr:hover {
 
 .thisPage {
     background-color: #e8edfd;
-    color: rgb(39, 72, 216);
+    color: rgb(58, 55, 55);
 }
 
 
-.button:hover{
+.button:hover {
     background-color: #e8edfd;
     color: black;
 }
@@ -290,7 +292,7 @@ tr:hover {
 
 .linkGroup a button {
     display: flex;
-    min-width: 288px;
+    min-width: 327px;
     min-height: 72px;
 
 }
@@ -316,10 +318,11 @@ h1 {
     padding: 0px;
     padding-top: .1em;
     margin-top: 1em;
-    font-family: 'Press Start 2P', cursive; 
+    font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     background-color: black;
     margin-bottom: .5em;
+    margin-left: 5%;
 }
 
 #bioPic {
@@ -340,7 +343,7 @@ button {
 
 .tourButton {
     font-size: 1.5em;
-    margin-top:.5em;
+    margin-top: .5em;
 }
 
 .tourTable {
@@ -355,19 +358,21 @@ button {
 #socialMedia {
     filter: grayscale(.95);
 }
-.overFlowTable{
-    overflow-x:auto;
-}
-#indexMain{
-    background-color:black;
+
+.overFlowTable {
+    overflow-x: auto;
 }
 
-.characterProfilePicture{
+#indexMain {
+    background-color: black;
+}
+
+.characterProfilePicture {
     position: relative;
     z-index: 10;
 }
 
-.characterProfileSection{
+.characterProfileSection {
     display: none;
 }
 
@@ -375,36 +380,40 @@ button {
     opacity: 1;
     transition: opacity 1s, height 0;
     display: block;
-  }
-  
+}
+
 .hidden {
     opacity: 0;
     transition: opacity 1s, height 0 1s;
     height: 0;
-  }
-#definition{
-    text-align: left;
+}
+
+#definition {
     display: block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    max-width: 640px;
-
-}
-#definitionBody{
-position:block;
+    width: 50.5%;
+    min-width: 360px;
 }
 
-.definitionKeyWord{
-    position:block;
+#definitionBody {
+    position: block;
+    margin: 10px;
+}
+
+.definitionKeyWord {
+    position: block;
     color: rgb(143, 255, 143);
 }
-.genreLabelOnFooter{
+
+.genreLabelOnFooter {
     text-align: center;
     color: black;
     z-index: 3;
 }
-.characterNarrative{
+
+.characterNarrative {
     word-wrap: none;
     color: rgb(143, 255, 143);
     margin-left: auto;
@@ -412,56 +421,86 @@ position:block;
     max-width: 66%;
     margin-bottom: 1rem;
 }
-#merchandizingLogo, #songListTitle{
+
+#merchandizingLogo,
+#songListTitle {
     text-align: center;
     color: rgb(143, 255, 143);
 }
-#albumImage{
+
+#albumImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     max-width: 640px;
 }
-.songImage{
+
+.songImage {
     display: none;
 }
-#tourScheduleHeader, #instructionsForAboutPage{
+
+#tourScheduleHeader,
+#instructionsForAboutPage {
     color: rgb(143, 255, 143);
-    display:block;
+    display: block;
     text-align: center;
     padding-right: 10.5%;
 }
-.tourCard{
-    background-color:black;
+
+.tourCard {
+    background-color: black;
     max-height: 150px;
     display: none;
 }
-.tourDate, .tourVenue, .tourLocation{
-    margin:.5em;
+
+.tourDate,
+.tourVenue,
+.tourLocation {
+    margin: .5em;
     text-align: left;
 }
-.tourDate,.tourVenue{
+
+.tourDate,
+.tourVenue {
     text-align: center;
     color: rgb(143, 255, 143);
     margin-top: .5em;
     padding-top: .5em;
 }
-.tourDate:hover, .tourVenue:hover, .tourLocation:hover{
-    margin:.5em;
+
+.tourDate:hover,
+.tourVenue:hover,
+.tourLocation:hover {
+    margin: .5em;
     background-color: black;
 }
-.tourLocation{
+
+.tourLocation {
     color: white;
 }
-#instructionsForAboutPage{
-    margin-left: 10%;
-}
-#tourScheduleHeader{
-    margin-left: 10%;
-}
-#signUpForm{
 
+#instructionsForAboutPage {
+    margin-left: 10%;
+}
+
+#tourScheduleHeader {
+    margin-left: 10%;
+}
+
+#signUpForm {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+    background-color: rgb(39, 72, 216);
+    color: white;
+    display: none;
 }
 
 
@@ -473,11 +512,11 @@ position:block;
     background-color: #dff0d8;
     border: 1px solid #d6e9c6;
     -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-  }
-  
-  .error {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.error {
     padding: 1em;
     margin-bottom: 0.75rem;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -485,6 +524,11 @@ position:block;
     background-color: #f2dede;
     border: 1px solid rgba(185, 74, 72, 0.3);
     -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-  }
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+#sendButton{
+
+}

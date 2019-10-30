@@ -40,10 +40,10 @@
             // Set a 200 (okay) response code.
             //http_response_code(200);
             //echo "Thank You! Your message has been sent.";
-            echo '<script type="text/javascript">',                 
-                 'window.location ="index.html"',
-                 '</script>'
-            ;
+            //echo '<script type="text/javascript">',                 
+              //   'window.location ="index.html"',
+                // '</script>'
+            //;
 
         } else {
             // Set a 500 (internal server error) response code.
