@@ -25,10 +25,10 @@
 
         function getCharacterInformation(characterName){
             if(characterName == "Pat") {hideAllSections(); character1.style.display = "block"; }
-            if(characterName == "Dan") {hideAllSections(); character2.style.display = "block"; }
+            if(characterName == "Tyler") {hideAllSections(); character2.style.display = "block"; }
             if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block"; }
             if(characterName == "JD") {hideAllSections(); character4.style.display = "block"; }
-            if(characterName == "Joe") {hideAllSections(); character5.style.display = "block"; }
+            if(characterName == "Jim") {hideAllSections(); character5.style.display = "block"; }
             if(characterName == "Garth") {hideAllSections(); character6.style.display = "block"; }
             if(characterName == "Urg") {hideAllSections(); character7.style.display = "block"; }
         }

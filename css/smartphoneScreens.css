@@ -41,6 +41,8 @@ h1{
 }
 .characterNarrative{
     word-wrap: none;
+    width: 100%;
+    
 }
 #definitionBody{
 margin-left:10%;

@@ -106,15 +106,11 @@
             </ul>
         </nav>
         <div id="socialMedia">
-            <a href="www.snapchat.com/the-murderhobos"><img src="images/socialMediaIcon_faceBook.gif"
-                    alt="facebook social media link"></a>
-            <a href="www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif"
+            <a href="https://www.twitter.com/the_murderhobos"><img src="images/socialMediaIcon_twitter.gif"
                     alt="twitter social media link"></a>
-            <a href="www.instagram.com/the-murderhobos"><img src="images/socialMediaIcon_instagram.png"
+            <a href="https://www.instagram.com/the-murderhobos"><img src="images/socialMediaIcon_instagram.png"
                     alt="instagram social media link"></a>
-            <a href="www.twitch.com/the-murderhobos"><img src="images/socialMediaIcon_twitch.png"
-                    alt="twitch social media link"></a>
-            <a href="www.soundcloud.com/the-murderhobos"><img src="images/socialMediaIcon_soundCloud.png"
+            <a href="https://www.soundcloud.com/the-murderhobos"><img src="images/socialMediaIcon_soundCloud.png"
                     alt="soundCloud social media link"></a>
         </div>
     </footer>
@@ -129,9 +125,6 @@
         if (localStorage.length < LOCAL_STORAGE_MAXIMUM) {
             var visitedBool = false;
             localStorage.visited = visitedBool;
-            //localStorage.setItem('visited', 'false');
-            window.alert("local storage WAS less than 1");
-
         }
 
         $(document).ready(function () {
@@ -148,9 +141,10 @@
 
                 console.log("visited the site was undefined or false");
 
-                //load the Call to Action
-                $("#signUpForm").css("display", "block");
-                $("#signUpForm").show();
+                //load the Call to Action has been commented out until I figure out a way
+                //to make it less jarring, from a UX perspective
+                //$("#signUpForm").css("display", "block");
+                //$("#signUpForm").show();
                 console.log("shown");
                 localStorage.setItem('visited', 'true');
             }

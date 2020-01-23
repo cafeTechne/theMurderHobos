@@ -37,8 +37,7 @@ nav ul li a:hover {
 
 .button {
     border-radius: 10px;
-    border: 2px black solid;
-
+    border: 2px #5e656a solid;
     color: black;
 
     text-align: center;
@@ -83,6 +82,7 @@ h3 {
 h3 {
     margin-top: 20px;
     margin-bottom: 5px;
+    color: black;
 }
 
 h4 {
@@ -108,7 +108,7 @@ a:active {
 }
 
 body {
-    background-color: #fdf5e8;
+    background-color: #e9e9ec;
     margin: 0;
     padding: 0;
 
@@ -116,12 +116,13 @@ body {
 
 #wrapper {
 
-    background-color: rgb(39, 72, 216);
+    /*background-color: rgb(39, 72, 216);*/
+    background-color: #5e656a;
     margin: 0 auto;
 }
 
 header {
-
+    background-color:#e9e9ec;
     padding: 0em 1em .33em 1em;
 
 }
@@ -130,8 +131,8 @@ header {
 
 footer {
 
-    background-color: black;
-    color: white;
+    background-color: #5e656a;
+    color: black;
 }
 
 .text1 {
@@ -149,7 +150,7 @@ footer {
 
 main {
 
-    background-color: rgb(39, 72, 216);
+    background-color: #5e656a;
     padding: 1em 0;
 
 }
@@ -275,7 +276,7 @@ tr:hover {
 
 .button:hover {
     background-color: #e8edfd;
-    color: black;
+    color: #5e656a;
 }
 
 .thisPage:hover {
@@ -320,7 +321,7 @@ h1 {
     margin-top: 1em;
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
-    background-color: black;
+    background-color: #5e656a;
     margin-bottom: .5em;
     margin-left: 5%;
 }
@@ -364,7 +365,7 @@ button {
 }
 
 #indexMain {
-    background-color: black;
+    background-color: #5e656a;
 }
 
 .characterProfilePicture {
@@ -374,6 +375,13 @@ button {
 
 .characterProfileSection {
     display: none;
+}
+
+
+.characterProfilePicture:focus {
+    position: relative;
+    z-index: 10;
+    background-color: black;
 }
 
 .displayed {
@@ -395,11 +403,13 @@ button {
     margin-right: auto;
     width: 50.5%;
     min-width: 360px;
+    color: white;
 }
 
 #definitionBody {
     position: block;
     margin: 10px;
+    color: white;
 }
 
 .definitionKeyWord {
@@ -407,7 +417,7 @@ button {
     color: rgb(143, 255, 143);
 }
 
-.genreLabelOnFooter {
+#genreLabelOnFooter {
     text-align: center;
     color: black;
     z-index: 3;
@@ -449,7 +459,7 @@ button {
 }
 
 .tourCard {
-    background-color: black;
+    background-color: #5e656a;
     max-height: 150px;
     display: none;
 }
@@ -473,7 +483,7 @@ button {
 .tourVenue:hover,
 .tourLocation:hover {
     margin: .5em;
-    background-color: black;
+    background-color: #5e656a;
 }
 
 .tourLocation {
@@ -531,4 +541,10 @@ button {
 
 #sendButton{
 
+}
+
+#cn-button{
+
+    background-color:#9da9b2;
+    color: #5e656a;
 }
