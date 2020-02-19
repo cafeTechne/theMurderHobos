@@ -438,6 +438,14 @@ button {
     color: rgb(143, 255, 143);
 }
 
+.songListItem{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding-top: 2px;
+    margin: 15px;
+}
+
 #albumImage {
     display: block;
     margin-left: auto;

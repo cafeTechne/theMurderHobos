@@ -29,7 +29,7 @@
             if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block"; }
             if(characterName == "JD") {hideAllSections(); character4.style.display = "block"; }
             if(characterName == "Jim") {hideAllSections(); character5.style.display = "block"; }
-            if(characterName == "Garth") {hideAllSections(); character6.style.display = "block"; }
+            if(characterName == "Chance") {hideAllSections(); character6.style.display = "block"; }
             if(characterName == "Urg") {hideAllSections(); character7.style.display = "block"; }
         }
         
