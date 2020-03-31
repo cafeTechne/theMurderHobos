@@ -1,10 +1,43 @@
+/*
+We place CSS variables for colors into root and then call them within css declarations as so:
+background-color: var(--main-bg-color);
+var(--ff4-menu-color);
+*/
+
+
+/*COLOR SCHEME:
+Background #282a36
+Current Line #44475a
+Selection #44475a
+Foreground #f8f8f2
+Comment #6272a4
+Cyan #8be9fd
+Green #50fa7b
+Orange #ffb86c
+Pink #ff79c6
+Purple #bd93f9
+Red #ff5555
+Yellow #f1fa8c
+
+*/
+:root {
+    --main-bg-color: brown;
+    --ff4-menu-color: rgb(8, 58, 189);
+    --menu-color: rgb(8, 58, 189);
+    --footer-color: rgb(8, 58, 189);
+    --hover-color: #5e656a;
+    --cool-color: #50fa7b;
+    --foreground: 	#f8f8f2;
+  }
+
 a {
-    color: white;
+    color: var(--foreground);;
 }
 
 a:hover {
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
 }
+
 
 nav ul {
 
@@ -30,15 +63,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: blue;
-
+    background-color: #6272a4;
 }
 
 
 .button {
     border-radius: 10px;
     border: 2px #5e656a solid;
-    color: black;
+    color: #282a36;
 
     text-align: center;
     text-decoration: none;
@@ -58,7 +90,7 @@ caption {
     padding: 0;
     margin-top: .2em;
     /*
-    can hide elemetns by using 
+    can hide elemetns by using
     margin-left: -99000px;
     float:left;
     */
@@ -70,11 +102,11 @@ caption {
 
 h2,
 h3 {
-    color: white;
+    color: var(--foreground);;
 }
 
 #newAlbumTitle {
-    color: white;
+    color: var(--foreground);;
     padding: .25em 1em;
     text-align: center;
 }
@@ -82,7 +114,7 @@ h3 {
 h3 {
     margin-top: 20px;
     margin-bottom: 5px;
-    color: black;
+    color: #282a36;
 }
 
 h4 {
@@ -99,12 +131,13 @@ a:visited {
 
 a:hover {
     /*text-decoration: none;*/
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
     ;
 }
 
 a:active {
     text-decoration: none;
+
 }
 
 body {
@@ -116,8 +149,8 @@ body {
 
 #wrapper {
 
-    /*background-color: rgb(39, 72, 216);*/
-    background-color: #5e656a;
+    /*background-color: #6272a4;*/
+    background-color: var(--menu-color);
     margin: 0 auto;
 }
 
@@ -131,8 +164,8 @@ header {
 
 footer {
 
-    background-color: #5e656a;
-    color: black;
+    background-color: var(--footer-color);
+    color: #282a36;
 }
 
 .text1 {
@@ -150,7 +183,7 @@ footer {
 
 main {
 
-    background-color: #5e656a;
+    background-color: var(--menu-color);
     padding: 1em 0;
 
 }
@@ -213,7 +246,7 @@ td {
 
 tr {
 
-    color: white;
+    color: var(--foreground);;
 }
 
 caption {
@@ -222,7 +255,7 @@ caption {
 }
 
 tr:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--hover-color);
 }
 
 .cardRow {
@@ -244,7 +277,7 @@ tr:hover {
     align-content: space-between;
     margin: 3em;
     margin-top: 0;
-    color: white;
+    color: var(--foreground);;
 
 }
 
@@ -276,7 +309,7 @@ tr:hover {
 
 .button:hover {
     background-color: #e8edfd;
-    color: #5e656a;
+    color: var(--hover-color);
 }
 
 .thisPage:hover {
@@ -321,9 +354,10 @@ h1 {
     margin-top: 1em;
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
-    background-color: #5e656a;
+    background-color: var(--menu-color);
     margin-bottom: .5em;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 #bioPic {
@@ -365,7 +399,7 @@ button {
 }
 
 #indexMain {
-    background-color: #5e656a;
+    background-color: var(--menu-color);
 }
 
 .characterProfilePicture {
@@ -381,7 +415,7 @@ button {
 .characterProfilePicture:focus {
     position: relative;
     z-index: 10;
-    background-color: black;
+    background-color: #282a36;
 }
 
 .displayed {
@@ -403,29 +437,29 @@ button {
     margin-right: auto;
     width: 50.5%;
     min-width: 360px;
-    color: white;
+    color: var(--foreground);;
 }
 
 #definitionBody {
     position: block;
     margin: 10px;
-    color: white;
+    color: var(--foreground);;
 }
 
 .definitionKeyWord {
     position: block;
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
 }
 
 #genreLabelOnFooter {
     text-align: center;
-    color: black;
+    color: #282a36;
     z-index: 3;
 }
 
 .characterNarrative {
     word-wrap: none;
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
     margin-left: auto;
     margin-right: auto;
     max-width: 66%;
@@ -435,12 +469,14 @@ button {
 #merchandizingLogo,
 #songListTitle {
     text-align: center;
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
+    font-size: 1.75rem;
+
 }
 
 .songListItem{
     text-align: center;
-    color: white;
+    color: var(--foreground);;
     list-style-type: none;
     padding-top: 2px;
     margin: 15px;
@@ -460,7 +496,7 @@ button {
 
 #tourScheduleHeader,
 #instructionsForAboutPage {
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
     display: block;
     text-align: center;
     padding-right: 10.5%;
@@ -482,7 +518,7 @@ button {
 .tourDate,
 .tourVenue {
     text-align: center;
-    color: rgb(143, 255, 143);
+    color: var(--cool-color);
     margin-top: .5em;
     padding-top: .5em;
 }
@@ -495,7 +531,7 @@ button {
 }
 
 .tourLocation {
-    color: white;
+    color: var(--foreground);;
 }
 
 #instructionsForAboutPage {
@@ -516,8 +552,8 @@ button {
     max-width: 100%;
     height: 400px;
     max-height: 100%;
-    background-color: rgb(39, 72, 216);
-    color: white;
+    background-color: #6272a4;
+    color: var(--foreground);;
     display: none;
 }
 
@@ -556,3 +592,41 @@ button {
     background-color:#9da9b2;
     color: #5e656a;
 }
+
+
+
+#cn-wrapper > ul > li:nth-child(1){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(2){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(3){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(4){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(5){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(6){
+    color: black;
+    background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li:nth-child(7){
+    color: black;
+    background-color: var(--menu-color);
+}
+
