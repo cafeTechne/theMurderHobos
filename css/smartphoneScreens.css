@@ -30,34 +30,42 @@ tbody{
 }
 
 #definition{
+    line-height: 1.275;
     position: relative;
-    margin: 2em;    
+    margin: 2em;
+    margin-left: 2.5em;
+    margin-right: .5em;
     text-align: left;
     left: 0%;
-    width: 80%;
+    width: 85%;
+    font-size: .9rem;
 }
+
 h1{
     display: none;
 }
+
 .characterNarrative{
-    word-wrap: none;
-    width: 100%;
-    
+    line-height: 1.5;
+    margin: 2em;
+    margin-left: 1.75em;
+    text-align: left;
+    left: 0%;
+    right: 0%;
+    max-width: 85%;
+    width: 85%;
+    font-size: .9rem;
+
 }
 #definitionBody{
-margin-left:10%;
+margin-left:0%;
 }
-.merchandizingLogo{
-    text-align: center;
-    position:relative;
-    margin-left: 33%;
-    margin-left: 5em;
-}
+
 #albumImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 87%;
     max-width: 640px;
 }
 #tourScheduleHeader{
@@ -73,4 +81,12 @@ margin-left:10%;
 }
 .tourCard{
     display: block;
+}
+#songList{
+    padding: 0;
+}
+.merchandizingLogo{
+    text-align: center;
+    margin-left: 0%;
+    margin: 0;
 }
