@@ -90,3 +90,14 @@ margin-left:0%;
     margin-left: 0%;
     margin: 0;
 }
+
+#socialMedia{
+    max-width: 22px;
+    max-height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}

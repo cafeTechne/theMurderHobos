@@ -48,8 +48,8 @@ body {
 	border: none;
 	border-radius: 50%;
 	background: none;
-	background-color:rgb(39, 72, 216);
-	color:rgb(39, 72, 216);
+	background-color:rgb(8, 58, 189);
+	color:rgb(8, 58, 189);
 	text-align: center;
 	font-weight: 700;
 	font-size: 1.5em;
@@ -143,7 +143,7 @@ body {
 	height: 14.5em;
 	border-radius: 50%;
 
-	color: rgb(39, 72, 216);
+	color: rgb(8, 58, 189);
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.2em;
