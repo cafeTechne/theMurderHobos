@@ -227,7 +227,7 @@ main {
     max-height: 48px;
     min-height: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -236,7 +236,7 @@ main {
     max-height: 22px;
     min-width: 22px;
     min-height: 22px;
-    padding: 10px;
+    padding: 0px;
     display: flex;
 }
 
@@ -365,7 +365,7 @@ h1 {
     padding-top: .1em;
     margin-top: 1em;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 1.75em;
     background-color: var(--menu-color);
     margin-bottom: .5em;
     margin-left: 3%;
@@ -496,6 +496,7 @@ button {
     font-size: 1.75rem;
     margin: 0;
     margin-left: 5%;
+    margin-bottom: 2%;
 
 }
 
