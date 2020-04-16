@@ -21,14 +21,26 @@
         }
 
 
+        //is it worth refactoring the function below into something less procedural and more concise if it does the job?
+/**
+ * This function displays the backstory of the character chosen and also left justifies the text so that it is more legible.
+ * @param {*} characterName
+ */
         function getCharacterInformation(characterName){
-            if(characterName == "Pat") {hideAllSections(); character1.style.display = "block"; }
-            if(characterName == "Tyler") {hideAllSections(); character2.style.display = "block"; }
-            if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block"; }
-            if(characterName == "JD") {hideAllSections(); character4.style.display = "block"; }
-            if(characterName == "Matt") {hideAllSections(); character5.style.display = "block"; }
-            if(characterName == "Travis") {hideAllSections(); character6.style.display = "block"; }
-            if(characterName == "Urg") {hideAllSections(); character7.style.display = "block"; }
+            if(characterName == "Pat") {hideAllSections(); character1.style.display = "block";
+            document.querySelector("#character1 > h2").style.textAlign="left"}
+            if(characterName == "Tyler") {hideAllSections(); character2.style.display = "block";
+            document.querySelector("#character2 > h2").style.textAlign="left"}
+            if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block";
+            document.querySelector("#character3 > h2").style.textAlign="left"}
+            if(characterName == "JD") {hideAllSections(); character4.style.display = "block";
+            document.querySelector("#character4 > h2").style.textAlign="left"}
+            if(characterName == "Matt") {hideAllSections(); character5.style.display = "block";
+            document.querySelector("#character5 > h2").style.textAlign="left"}
+            if(characterName == "Travis") {hideAllSections(); character6.style.display = "block";
+            document.querySelector("#character6 > h2").style.textAlign="left"}
+            if(characterName == "Urg") {hideAllSections(); character7.style.display = "block";
+            document.querySelector("#character7 > h2").style.textAlign="left";}
         }
 
 

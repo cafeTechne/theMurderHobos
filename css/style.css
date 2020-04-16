@@ -266,7 +266,8 @@ caption {
 }
 
 tr:hover {
-    background-color: var(--hover-color);
+    background-color: var(--green);
+    color: black;
 }
 
 .cardRow {
@@ -483,7 +484,7 @@ button {
     margin-right: auto;
     max-width: 80%;
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
     line-height: 1.4;
     color: var(--orange);
     text-justify: auto;
@@ -529,10 +530,11 @@ button {
 }
 
 .tourCard {
-    background-color: #var(hover-color);
+
     max-height: 150px;
     display: none;
 }
+
 
 .tourDate,
 .tourVenue,
@@ -553,7 +555,7 @@ button {
 .tourVenue:hover,
 .tourLocation:hover {
     margin: .5em;
-    background-color: #var(hover-color);
+    background-color: var(--comment);
 }
 
 .tourLocation {
