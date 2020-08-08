@@ -118,6 +118,7 @@ caption {
     /* */
     font-weight: normal;
     word-wrap: break-word;
+    text-shadow: 1px 1px #2d2a4b;
 }
 
 h2,
@@ -228,6 +229,7 @@ main {
 
 }
 
+
 #socialMedia {
     margin: 0 auto;
     padding: 1em;
@@ -237,6 +239,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--background);
 }
 
 #socialMedia img {
@@ -506,8 +509,8 @@ button {
 .characterNarrative {
     
     color: var(--purple);
-    text-align: justify;
-    padding-left: 2.5%;
+    
+    padding-left: 9.5%;
     padding-right: 2.5%;
 }
 
@@ -532,7 +535,19 @@ button {
     list-style-type: none;
     padding-top: 2px;
     margin: 15px;
+
+    position: relative;
+    
+    color: white;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
 
 #albumImage {
     display: block;
@@ -724,10 +739,7 @@ header{
     margin: 5%;
 }
 
-#socialMedia{
-    background-color: var(--background);
-    
-}
+
 caption{
     background-color: var(--background);
 }
@@ -783,3 +795,42 @@ div.card:nth-child(even) > div:nth-child(even){
     max-width: 75%;
 }
 
+
+
+.lyrics{
+    color: var(--background);
+    font-size: .45rem;
+    margin: 0;
+    padding: 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .stanza{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+  .line{
+      display: block;
+      padding: .33rem;
+      color: var(--foreground);
+      text-align: left;
+  }
+
+  #songOneLyrics{
+    
+    background-color: var(--background);
+}
+
+strong{
+    color:var(--green);
+}
