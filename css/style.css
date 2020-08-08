@@ -427,6 +427,7 @@ button {
 
 .socialMediaIcon {
     filter: grayscale(.95);
+    z-index: 4;
 }
 
 .overFlowTable {
