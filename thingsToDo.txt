@@ -1,0 +1,22 @@
+change "touch to tap" on about   xxx
+
+fix hover behavior on tour page   xxx
+
+change the getCharacterInformation f(x)
+so it left justifies text   xxx
+
+change the 8 bit pixel photo so the dock is uniform throughout...
+
+Adjust the typography on the album-cover mockup--placement and size of the murderhobos and the Vs.
+
+******************************************
+Have people choose their sprites, or choose them for them
+
+choose backgrounds for each character
+
+display character specific backgrounds when the characters are chosen
+
+change the sprite to an action/emote when they are chosen
+
+flesh out the stories on the about page
+******************************************
