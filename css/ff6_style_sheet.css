@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Final Fantasy 3/6 Font Regular";
+  src: url("fonts/final_fantasy_36_font.eot?") format("eot"),
+    url("fonts/final_fantasy_36_font.woff") format("woff"),
+    url("fonts/final_fantasy_36_font.ttf") format("truetype"),
+    url("fonts/final_fantasy_36_font.svg#Final-Fantasy-3/6-Font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+
+
+  --hover-color: #5e656a;
+  --foreground: 	#f8f8f2;
+  --selection: #44475a;
+  --background: #282a36;
+  --currentLine: #44475a;
+  --foreground: #f8f8f2;
+
+  --outer-battle-window-color-0: #7c7874;
+  --outer-battle-window-color-1: #c8c4c0;
+  --outer-battle-window-color-2: #ccc9cc;
+  --outer-battle-window-color-3: #c9c9cb;
+  --outer-battle-window-color-4: #c2c1c5;
+  --outer-battle-window-color-5: #71767e;
+  --outer-battle-window-color-6: #6b6e87;
+
+  --battle-window-top-gradient-color: #6c70a6;
+  --background-color-blue:#21217c;
+  --background-color-black:#181820;
+  --battle-window-bottom-gradient-color: #040136;
+
+
+  --dialogue-window-color-gradient:#6d6db3,#5554ad,#5352a8,#3f4791,#354783,#32348d,#32328a,#313188,#222279,#14156d,#02045a,#040233,#020234,#020134;
+  --battle-window-border-radius: 5px;
+
+  --br:5px;     /* border radius   */
+  --bg:#6b6e87,#71767e,#c2c1c5,#c9c9cb,#ccc9cc,#c8c4c0,#7c7874,#c0bcb3;/*border gradient */
+  --bgb: #6b6e87,#71767e,#c2c1c5,#c9c9cb,#ccc9cc,#c8c4c0,#7c7874,#c0bcb3,#020134;
+  --f:25px;/* minimum font size */
+
+  --highlighted-text: #edd758;
+
+}
+html{
+    font-family: "Final Fantasy 3/6 Font Regular", monospace;
+    color: #ecedee;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background);
+    text-shadow: 1px 1px #2d2a4b;
+}
+div{
+    background-color: var(--background);
+}
+h1,h2,h3,h4,h5{
+    font-weight: normal; /*This typeface does not look good bold*/
+}
+
+.outer-dialogue-window {
+    border-radius:var(--br);
+    padding:calc(var(--br) + 5px);
+    background:
+      /*corners*/
+      radial-gradient(farthest-side at bottom right,var(--bg)) top    left /var(--br) var(--br),
+      radial-gradient(farthest-side at top    right,var(--bg)) bottom left /var(--br) var(--br),
+      radial-gradient(farthest-side at bottom left ,var(--bg)) top    right/var(--br) var(--br),
+      radial-gradient(farthest-side at top    left ,var(--bg)) bottom right/var(--br) var(--br),
+      /* borders*/
+      linear-gradient(to top   ,var(--bg)) top   /calc(100% - 2*var(--br)) var(--br),
+      linear-gradient(to bottom,var(--bg)) bottom/calc(100% - 2*var(--br)) var(--br),
+      linear-gradient(to right ,var(--bg)) right /var(--br) calc(100% - 2*var(--br)),
+      linear-gradient(to left  ,var(--bg)) left  /var(--br) calc(100% - 2*var(--br));
+    background-repeat:no-repeat;
+    /*
+    My first approach to solving this led to unmaintainable code. 
+    As of now, I feel that my current gradients are "good enough" at 
+    approximating the pixelated anti-aliasing of the original ui menu window.
+    */
+
+    box-sizing:border-box;
+    display:inline-block;
+    vertical-align:top;
+    font-size:var(--f);
+    border-width: 1px;
+    text-shadow: 2px 1px #2d2a4b;
+  }
+
+  .inner-dialogue-window{
+    background: linear-gradient(to bottom,var(--dialogue-window-color-gradient));
+    padding: 5px;
+    margin: -5px;
+  }
+
+  .container{
+    margin: 1.5% 2.85%;
+    
+  }

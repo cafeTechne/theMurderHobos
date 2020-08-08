@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Final Fantasy 3/6 Font Regular";
+    src: url("fonts/final_fantasy_36_font.eot?") format("eot"),
+      url("fonts/final_fantasy_36_font.woff") format("woff"),
+      url("fonts/final_fantasy_36_font.ttf") format("truetype"),
+      url("fonts/final_fantasy_36_font.svg#Final-Fantasy-3/6-Font") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 /*
 We place CSS variables for colors into root and then call them within css declarations as so:
 background-color: var(--main-bg-color);
@@ -21,9 +32,12 @@ Yellow #f1fa8c
 
 */
 :root {
-    --menu-color: rgb(8, 58, 189);
+    /*--menu-color: rgb(8, 58, 189);
     --blue: rgb(8, 58, 189);
-    --hover-color: #5e656a;
+    */
+    --menu-color: #2bd1fc;
+    --blue: #2bd1fc;
+    --hover-color: #ffb86c;
     --foreground: 	#f8f8f2;
     --selection: #44475a;
     --background: #282a36;
@@ -39,13 +53,9 @@ Yellow #f1fa8c
     --yellow: #f1fa8c;
   }
 
-a {
-    color: var(--foreground);
-}
 
-a:hover {
-    color: var(--green);
-}
+
+
 
 
 nav ul {
@@ -78,7 +88,7 @@ nav ul li a:hover {
 
 .button {
     border-radius: 10px;
-    border: 2px #var(hover-color) solid;
+    border: 2px var(--hover-color) solid;
     color: #282a36;
 
     text-align: center;
@@ -90,11 +100,12 @@ nav ul li a:hover {
 }
 
 h1,
-h2,
-h3,
+
 h4,
 caption {
-    font-family: 'Press Start 2P', cursive;
+
+
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
     margin-top: .2em;
@@ -112,6 +123,8 @@ caption {
 h2,
 h3 {
     color: var(--foreground);;
+    text-align: center;
+    margin: auto;
 }
 
 #newAlbumTitle {
@@ -138,11 +151,6 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    /*text-decoration: none;*/
-    color: var(--green);
-    ;
-}
 
 a:active {
     text-decoration: none;
@@ -178,13 +186,13 @@ footer {
 }
 
 .text1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
 }
 
 .text2 {
 
 
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -192,7 +200,7 @@ footer {
 
 main {
 
-    background-color: var(--menu-color);
+    background-color: var(--background);
     padding: 1em 0;
 
 }
@@ -266,7 +274,8 @@ caption {
 }
 
 tr:hover {
-    background-color: var(--hover-color);
+    background-color: var(--blue);
+    color: var(--background);
 }
 
 .cardRow {
@@ -320,12 +329,12 @@ tr:hover {
 
 .button:hover {
     background-color: #e8edfd;
-    color: var(--hover-color);
+    color: var(--pink);
 }
 
 .thisPage:hover {
     background-color: #e8edfd;
-    color: red;
+    color: var(--red);
 }
 
 
@@ -354,8 +363,7 @@ tr:hover {
 h1 {
     font-size: 7em;
     padding-bottom: .0625em;
-    font-family: 'Press Start 2P', cursive;
-    color: var(--green);
+    color: var(--yellow);
 }
 
 
@@ -364,7 +372,7 @@ h1 {
     padding: 0px;
     padding-top: .1em;
     margin-top: 1em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
     font-size: 1.75em;
     background-color: var(--menu-color);
     margin-bottom: .5em;
@@ -379,7 +387,7 @@ h1 {
 }
 
 #biography {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
     font-size: 1.125em;
     text-indent: 2em;
     padding: 1em;
@@ -398,13 +406,26 @@ button {
 .tourTable {
     max-width: 200px;
 }
+.tourTable{
+    background-color: var(--background);
+}
+.tourTable tr:nth-child(odd){
+    background-color: var(--purple);
+    color: var(--black);
+}
+.tourTable tr:nth-child(1){
+    background-color: var(--purple);
+    color: var(--background);
+    
+}
+
 
 .merchPrice {
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
 }
 
-#socialMedia {
+.socialMediaIcon {
     filter: grayscale(.95);
 }
 
@@ -413,7 +434,7 @@ button {
 }
 
 #indexMain {
-    background-color: var(--menu-color);
+    background-color: var(--background);
 }
 
 .characterProfilePicture {
@@ -423,6 +444,9 @@ button {
 
 .characterProfileSection {
     display: none;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -460,43 +484,44 @@ button {
     overflow: hidden;
     display: inline;
     margin: 0px;
-    color: var(--green);
+    color: var(--yellow);
 }
 
 .definitionKeyWord {
     display: inline;
     margin: 0px;
-    color: var(--green);
+    color: var(--yellow);
 }
 
 #genreLabelOnFooter {
     text-align: center;
-    color: var(--selection);
+    margin: 0;
+    background-color: var(--purple);
+    color: var(--background);
     z-index: 3;
-    color: var(--green);
+    
 }
 
 .characterNarrative {
-    word-wrap: none;
-    color: var(--green);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    margin-bottom: 1rem;
-    text-align: left;
-    line-height: 1.4;
-    color: var(--orange);
-    text-justify: auto;
+    
+    color: var(--purple);
+    text-align: justify;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 #merchandizingLogo,
 #songListTitle {
     text-align: center;
-    color: var(--green);
-    font-size: 1.75rem;
-    margin: 0;
-    margin-left: 5%;
-    margin-bottom: 2%;
+    color: var(--purple);
+    
+    margin-top: 0%;
+    margin-left: 7.25%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
+    font-size: 3.75rem;
+
 
 }
 
@@ -522,14 +547,14 @@ button {
 
 #tourScheduleHeader,
 #instructionsForAboutPage {
-    color: var(--green);
+    color: var(--purple);
     display: block;
     text-align: center;
     padding-right: 10.5%;
 }
 
 .tourCard {
-    background-color: #var(hover-color);
+    background-color: var(--hover-color);
     max-height: 150px;
     display: none;
 }
@@ -544,7 +569,7 @@ button {
 .tourDate,
 .tourVenue {
     text-align: center;
-    color: var(--green);
+    color: var(--purple);
     margin-top: .5em;
     padding-top: .5em;
 }
@@ -553,7 +578,8 @@ button {
 .tourVenue:hover,
 .tourLocation:hover {
     margin: .5em;
-    background-color: #var(hover-color);
+    background-color: var(--hover-color);
+    color: black;
 }
 
 .tourLocation {
@@ -615,44 +641,45 @@ button {
 
 #cn-button{
 
-    background-color:#9da9b2;
-    color: #var(hover-color);
+    background-color:var(--purple);
+    color: var(--background);
+
 }
 
 
 
 #cn-wrapper > ul > li:nth-child(1){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(2){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(3){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(4){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(5){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(6){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
 #cn-wrapper > ul > li:nth-child(7){
-    color: black;
+    color: var(--background);
     background-color: var(--menu-color);
 }
 
@@ -664,7 +691,93 @@ TODO:
 */
 .csstransforms .cn-wrapper li a:nth-child(1){
     /*pointer-events: unset;*/
-
+    
 }
 picture.characterProfilePicture:active { background-color: transparent}
+
+a {
+    color: var(--foreground);
+    font-family: 'Press Start 2P', cursive;
+}
+header{
+    background-color: var(--purple);
+}
+.cn-wrapper, .cn-button{
+    background-color: var(--purple);
+    color: var(--purple);
+}
+
+.indexHeader{
+    background-color: var(--selection);
+}
+
+#indexH1{
+    color: var(--orange);
+}
+
+#indexFooter{
+    background-color: var(--background);
+}
+.outer-dialogue-window{
+    margin: 5%;
+}
+
+#socialMedia{
+    background-color: var(--background);
+    
+}
+caption{
+    background-color: var(--background);
+}
+
+.overFlowTable{
+    background-color: var(--selection);
+}
+
+li.songListItem:nth-child(odd){
+    color: var(--blue);
+}
+li.songListItem:nth-child(even){
+    color: var(--yellow);
+}
+
+div.card:nth-child(odd) > div:nth-child(even){
+    color: var(--orange);
+}
+div.card:nth-child(even) > div:nth-child(even){
+    color: var(--green);
+}
+#instructionsForAboutPage{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#socialMedia > a{
+    padding: 25px;
+
+}
+
+.component{
+    margin-top: 0;
+    padding-top: 0;
+    height: 15em;
+}
+
+.container{
+    margin-top: 0;
+    padding: 0;
+}
+
+#instructionsForAboutPage > h2{
+    margin-left: 25%;
+    text-align: left;
+    max-width: 75%;
+}
+
+.characterProfileSection{
+    margin-left: 12.5%;
+    text-align: justify;
+    max-width: 75%;
+}
 

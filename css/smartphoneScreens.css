@@ -48,14 +48,25 @@ h1{
 .characterNarrative{
     line-height: 1.5;
     margin: 2em;
-    margin-left: 1.75em;
+    margin-left: 2em;
     text-align: left;
     left: 0%;
     right: 0%;
     max-width: 85%;
     width: 85%;
     font-size: .9rem;
+    
 
+    
+    color: var(--purple);
+    
+    padding-left: 5%;
+    padding-right: 2.5%;
+
+}
+#instructionsForAboutPage{
+    text-align: center;
+    margin: auto;
 }
 #definitionBody{
 margin-left:0%;
@@ -100,4 +111,26 @@ margin-left:0%;
     display: flex;
     justify-content: space-around;
     justify-items: center;
+}
+
+#instructionsForAboutPage > h2{
+    margin-left: 10%;
+    text-align: left;
+    max-width: 75%;
+}
+
+.characterProfileSection{
+    margin-left: 0%;
+    text-align: left;
+    max-width: 100%;
+    
+}
+.component{
+    margin-top: 0;
+    padding-top: 0;
+    height: 10em;
+}
+
+.tourCard{
+    background-color: var(--selection);
 }

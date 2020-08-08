@@ -19,6 +19,7 @@ body {
 	height: 15em;
 	background: rgba(0,0,0,0.05);
 	font-family: 'Press Start 2P', cursive;
+	
 }
 
 .component > h2 {
@@ -169,10 +170,45 @@ body {
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-	background: -webkit-radial-gradient(transparent 35%, rgb(104, 123, 211) 35%);
-	background: -moz-radial-gradient(transparent 35%, rgb(104, 123, 211) 35%);
-	background: radial-gradient(transparent 35%, rgb(104, 123, 211) 35%);
+	background: -webkit-radial-gradient(transparent 33.3%, var(--blue) 35%);
+	background: -moz-radial-gradient(transparent 35%, var(--blue) 35%);
+	background: radial-gradient(transparent 35%, var(--blue) 35%);
+	filter: contrast(195%);
+	
+	
 }
+
+
+.csstransforms{
+	background: var(--blue);
+}
+
+html.js.flexbox.canvas.canvastext.webgl.no-touch.geolocation.postmessage.no-websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.no-cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths body main div.container div.component div#cn-wrapper.cn-wrapper.opened-nav ul li{
+	background: var(--background);
+}
+
+html.js.flexbox.canvas.canvastext.webgl.no-touch.geolocation.postmessage.no-websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.no-cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths body main div.container div.component div#cn-wrapper.cn-wrapper.opened-nav ul li:active{
+	color: var(--background);
+	filter: contrast(200%);
+}
+
+#cn-wrapper > ul > li:focus {
+	background-color: black;
+}
+
+#cn-wrapper > ul:nth-child(1) > li:nth-child(1)::selection{
+	background-color: black;
+}
+
+.csstransforms .cn-wrapper ul li:hover{
+	background: blue;
+}
+
+
+.csstransforms .cn-wrapper li a {
+	background: var(--blue);
+}
+
 .csstransforms .cn-wrapper li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
 }
@@ -313,4 +349,9 @@ body {
 		height: 3em;
 		line-height: 3em;
 	}
+}
+
+#cn-button{
+	background-color: var(--purple);
+	color: var(--purple);
 }
