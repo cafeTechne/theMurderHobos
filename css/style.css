@@ -88,7 +88,7 @@ nav ul li a:hover {
 
 .button {
     border-radius: 10px;
-    border: 2px var(--hover-color) solid;
+    border: 2px var(--background) solid;
     color: #282a36;
 
     text-align: center;
@@ -176,6 +176,11 @@ header {
     background-color:var(--blue);
     padding: 0em 1em .33em 1em;
 
+
+    
+    border: 2px var(--background) solid;
+    color: #282a36;
+
 }
 
 
@@ -240,6 +245,10 @@ main {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--background);
+
+    border-radius: 10px;
+    border: 2px var(--background) solid;
+    color: #282a36;
 }
 
 #socialMedia img {
@@ -268,12 +277,18 @@ td {
 
 tr {
 
-    color: var(--foreground);;
+    color: var(--foreground);
 }
 
 caption {
     margin-bottom: 1.5em;
     font-size: 1.65em;
+}
+
+caption h2{
+    
+    border: 5px var(--background) solid;
+    
 }
 
 tr:hover {
@@ -419,7 +434,7 @@ button {
 .tourTable tr:nth-child(1){
     background-color: var(--purple);
     color: var(--background);
-    
+    height: 50px;
 }
 
 
@@ -563,10 +578,11 @@ button {
 
 #tourScheduleHeader,
 #instructionsForAboutPage {
-    color: var(--purple);
+    color: var(--menu-color);
     display: block;
     text-align: center;
     padding-right: 10.5%;
+    padding-bottom: 1.5%;
 }
 
 .tourCard {
@@ -581,6 +597,7 @@ button {
 .tourLocation {
     margin: .5em;
     text-align: left;
+
 }
 
 .tourDate,
@@ -589,6 +606,11 @@ button {
     color: var(--purple);
     margin-top: .5em;
     padding-top: .5em;
+}
+.tourDate{
+    border-radius: 5px;
+    border: 2px var(--foreground) solid;
+    color: var(--yellow)
 }
 
 .tourDate:hover,
@@ -649,11 +671,6 @@ button {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-}
-
-
-#sendButton{
-
 }
 
 #cn-button{
@@ -816,7 +833,10 @@ div.card:nth-child(even) > div:nth-child(even){
     display: block;
     width: 90%;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    display: inline-block;
+
+    
 }
 
   .line{
@@ -829,8 +849,23 @@ div.card:nth-child(even) > div:nth-child(even){
   #songOneLyrics{
     
     background-color: var(--background);
+    background-color: var(--background);
 }
 
 strong{
-    color:var(--green);
+    color:var(--pink);
+}
+
+li { cursor: pointer; }
+
+.songLyrics{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    
+}
+
+.characterInfo{
+    color: var(--green);
 }
