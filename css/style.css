@@ -89,8 +89,8 @@ nav ul li a:hover {
 .button {
     border-radius: 10px;
     border: 2px var(--background) solid;
-    color: #282a36;
-
+    color:#bd93f9;
+    background-color: #282a36;
     text-align: center;
     text-decoration: none;
     margin: 2px 2px;
@@ -126,6 +126,10 @@ h3 {
     color: var(--foreground);;
     text-align: center;
     margin: auto;
+}
+
+#instructionsForAboutPage{
+text-align: center;
 }
 
 #newAlbumTitle {
@@ -177,7 +181,7 @@ header {
     padding: 0em 1em .33em 1em;
 
 
-    
+
     border: 2px var(--background) solid;
     color: #282a36;
 
@@ -286,9 +290,9 @@ caption {
 }
 
 caption h2{
-    
+
     border: 5px var(--background) solid;
-    
+
 }
 
 tr:hover {
@@ -303,7 +307,7 @@ tr:hover {
     padding: 1em 0;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 
@@ -346,13 +350,13 @@ tr:hover {
 
 
 .button:hover {
-    background-color: #e8edfd;
+    background-color:#468847;
     color: var(--pink);
 }
 
 .thisPage:hover {
     background-color: #e8edfd;
-    color: var(--red);
+    color: var(--pink);
 }
 
 
@@ -381,7 +385,7 @@ tr:hover {
 h1 {
     font-size: 7em;
     padding-bottom: .0625em;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 
@@ -518,22 +522,27 @@ button {
     background-color: var(--purple);
     color: var(--background);
     z-index: 3;
-    
-}
+    padding: .25rem;
 
+}
+#instructionsForAboutPage > h2 {
+    margin: auto;
+    text-align: center;
+}
 .characterNarrative {
-    
+
     color: var(--purple);
-    
-    padding-left: 9.5%;
-    padding-right: 2.5%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
 }
 
 #merchandizingLogo,
 #songListTitle {
     text-align: center;
     color: var(--purple);
-    
+
     margin-top: 0%;
     margin-left: 7.25%;
     margin-right: 5%;
@@ -552,7 +561,7 @@ button {
     margin: 15px;
 
     position: relative;
-    
+
     color: white;
 }
 
@@ -561,7 +570,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
   }
 
 #albumImage {
@@ -581,8 +590,10 @@ button {
     color: var(--menu-color);
     display: block;
     text-align: center;
-    padding-right: 10.5%;
-    padding-bottom: 1.5%;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: .5rem;
 }
 
 .tourCard {
@@ -629,9 +640,6 @@ button {
     margin-left: 10%;
 }
 
-#tourScheduleHeader {
-    margin-left: 10%;
-}
 
 #signUpForm {
 
@@ -725,7 +733,7 @@ TODO:
 */
 .csstransforms .cn-wrapper li a:nth-child(1){
     /*pointer-events: unset;*/
-    
+
 }
 picture.characterProfilePicture:active { background-color: transparent}
 
@@ -733,9 +741,7 @@ a {
     color: var(--foreground);
     font-family: 'Press Start 2P', cursive;
 }
-header{
-    background-color: var(--purple);
-}
+
 .cn-wrapper, .cn-button{
     background-color: var(--purple);
     color: var(--purple);
@@ -769,7 +775,7 @@ li.songListItem:nth-child(odd){
     color: var(--blue);
 }
 li.songListItem:nth-child(even){
-    color: var(--yellow);
+    color: var(--green);
 }
 
 div.card:nth-child(odd) > div:nth-child(even){
@@ -801,7 +807,7 @@ div.card:nth-child(even) > div:nth-child(even){
 }
 
 #instructionsForAboutPage > h2{
-    margin-left: 25%;
+
     text-align: left;
     max-width: 75%;
 }
@@ -836,7 +842,7 @@ div.card:nth-child(even) > div:nth-child(even){
     margin-top: 2rem;
     display: inline-block;
 
-    
+
 }
 
   .line{
@@ -847,7 +853,7 @@ div.card:nth-child(even) > div:nth-child(even){
   }
 
   #songOneLyrics{
-    
+
     background-color: var(--background);
     background-color: var(--background);
 }
@@ -863,9 +869,52 @@ li { cursor: pointer; }
     margin-left: auto;
     margin-right: auto;
     width: 35%;
-    
+
 }
 
 .characterInfo{
     color: var(--green);
+}
+
+.characterCard{
+    margin-top: 1rem;
+    text-align: center;
+
+    padding: 1rem;
+
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+
+    padding: 0px;
+    background-color:#2bd1fc;
+
+    cursor: pointer;
+    z-index: 150;
+    padding-top: .33rem;
+
+    border-radius: 100%;
+}
+
+.characterPicture{
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+
+}
+
+.characterCard:hover,
+.characterCard:active,
+.characterCard:focus {
+	background: -webkit-radial-gradient(transparent 33.3%, var(--blue) 35%);
+	background: -moz-radial-gradient(transparent 35%, var(--blue) 35%);
+	background: radial-gradient(transparent 35%, var(--blue) 35%);
+	filter: contrast(135%);
+
+
+}
+
+h1{
+    text-shadow: 5px 11px #2d2a4b;
+    text-decoration: underline;
 }

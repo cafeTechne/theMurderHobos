@@ -19,7 +19,7 @@ body {
 	height: 15em;
 	background: rgba(0,0,0,0.05);
 	font-family: 'Press Start 2P', cursive;
-	
+
 }
 
 .component > h2 {
@@ -173,9 +173,9 @@ body {
 	background: -webkit-radial-gradient(transparent 33.3%, var(--blue) 35%);
 	background: -moz-radial-gradient(transparent 35%, var(--blue) 35%);
 	background: radial-gradient(transparent 35%, var(--blue) 35%);
-	filter: contrast(195%);
-	
-	
+	filter: contrast(135%);
+
+
 }
 
 

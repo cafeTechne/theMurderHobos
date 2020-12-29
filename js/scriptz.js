@@ -17,6 +17,10 @@
             character5.style.display = "none";
             character6.style.display = "none";
             character7.style.display = "none";
+            character8.style.display = "none";
+            character9.style.display = "none";
+            character10.style.display = "none";
+
             instructions.style.display = "none";
         }
 
@@ -29,11 +33,11 @@
         function getCharacterInformation(characterName){
             if(characterName == "Pat") {hideAllSections(); character1.style.display = "block";
             document.querySelector("#character1 > h2").style.textAlign="left"}
-            if(characterName == "Tyler") {hideAllSections(); character2.style.display = "block";
+            if(characterName == "Nils") {hideAllSections(); character2.style.display = "block";
             document.querySelector("#character2 > h2").style.textAlign="left"}
             if(characterName == "Lindsey") {hideAllSections(); character3.style.display = "block";
             document.querySelector("#character3 > h2").style.textAlign="left"}
-            if(characterName == "JD") {hideAllSections(); character4.style.display = "block";
+            if(characterName == "Herb") {hideAllSections(); character4.style.display = "block";
             document.querySelector("#character4 > h2").style.textAlign="left"}
             if(characterName == "Matt") {hideAllSections(); character5.style.display = "block";
             document.querySelector("#character5 > h2").style.textAlign="left"}
@@ -41,6 +45,13 @@
             document.querySelector("#character6 > h2").style.textAlign="left"}
             if(characterName == "Urg") {hideAllSections(); character7.style.display = "block";
             document.querySelector("#character7 > h2").style.textAlign="left";}
+            if(characterName == "Atmos") {hideAllSections(); character8.style.display = "block";
+            document.querySelector("#character8 > h2").style.textAlign="left";}
+            if(characterName == "Harriet") {hideAllSections(); character9.style.display = "block";
+            document.querySelector("#character9 > h2").style.textAlign="left";}
+            if(characterName == "Ben") {hideAllSections(); character10.style.display = "block";
+            document.querySelector("#character10 > h2").style.textAlign="left";}
+
         }
 
 

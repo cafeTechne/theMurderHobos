@@ -46,15 +46,15 @@ h1{
 }
 
 .characterNarrative{
-    
-    
-    
+
+
+
     text-align: left;
-    
-    
+
+
     font-size: .8rem;
     color: var(--purple);
-    
+
     padding-left: 5%;
     padding-right: 2.5%;
     margin-left: auto;
@@ -113,8 +113,10 @@ margin-left:0%;
 }
 
 #instructionsForAboutPage > h2{
-    margin-left: 10%;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: left;
     max-width: 100%;
 }
 
@@ -122,7 +124,7 @@ margin-left:0%;
     margin-left: 0%;
     text-align: left;
     max-width: 100%;
-    
+
 }
 .component{
     margin-top: 0;
@@ -140,5 +142,29 @@ margin-left:0%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    
+
+}
+
+.characterCard{
+    margin-top: .5rem;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+
+.characterPicture{
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+
 }
