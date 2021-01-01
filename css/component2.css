@@ -170,12 +170,10 @@ body {
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-	background: -webkit-radial-gradient(transparent 33.3%, var(--blue) 35%);
-	background: -moz-radial-gradient(transparent 35%, var(--blue) 35%);
-	background: radial-gradient(transparent 35%, var(--blue) 35%);
+	background: -webkit-radial-gradient(var(--purple) 45%, var(--blue) 100%);
+	background: -moz-radial-gradient(var(--purple) 45%, var(--blue) 100%);
+	background: radial-gradient(circle at center, var(--purple) 25%, var(--blue) 100%);
 	filter: contrast(135%);
-
-
 }
 
 

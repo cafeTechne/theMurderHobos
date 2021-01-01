@@ -94,6 +94,10 @@ margin-left:0%;
 #songList{
     padding: 0;
 }
+#songListTitle{
+    font-size: 3rem;
+    color: var(--yellow);
+}
 .merchandizingLogo{
     text-align: center;
     margin-left: 0%;
@@ -167,4 +171,23 @@ margin-left:0%;
     margin-bottom: 0rem;
     margin-top: 0rem;
 
+}
+
+.characterCard:hover, .characterCard.active, .characterCard:focus{
+
+    background: -webkit-radial-gradient(var(--purple) 40%, var(--blue) 100%);
+	background: -moz-radial-gradient(var(--purple) 40%, var(--blue) 100%);
+	background: radial-gradient(ellipse at bottom, var(--purple) 40%, var(--blue) 100%);
+	filter: contrast(135%);
+}
+
+
+#songList{
+    width: 99%;
+    margin: 0 auto;
+
+}
+
+.stanza{
+    width: 100%;
 }

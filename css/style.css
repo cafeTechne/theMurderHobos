@@ -81,9 +81,6 @@ nav ul li a {
     flex-direction: column;
 }
 
-nav ul li a:hover {
-    background-color: #6272a4;
-}
 
 
 .button {
@@ -164,6 +161,7 @@ a:active {
 
 body {
     background-color: var(--blue);
+
     margin: 0;
     padding: 0;
 
@@ -179,11 +177,9 @@ body {
 header {
     background-color:var(--blue);
     padding: 0em 1em .33em 1em;
-
-
-
-    border: 2px var(--background) solid;
     color: #282a36;
+    border: 2px var(--background) solid;
+
 
 }
 
@@ -253,6 +249,7 @@ main {
     border-radius: 10px;
     border: 2px var(--background) solid;
     color: #282a36;
+    filter:grayscale(100%);
 }
 
 #socialMedia img {
@@ -304,7 +301,7 @@ tr:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1em 0;
+    padding: 0em 0;
     flex-wrap: wrap;
     align-content: space-between;
     width: 50%;
@@ -350,8 +347,8 @@ tr:hover {
 
 
 .button:hover {
-    background-color:#468847;
-    color: var(--pink);
+    background-color:var(--green);
+    color: var(--background);
 }
 
 .thisPage:hover {
@@ -534,36 +531,65 @@ button {
     color: var(--purple);
     margin: 0px;
     padding: 0px;
-    text-align: center;
+    text-align: left;
+    padding-left: 5.25%;
 
+
+}
+
+#character1 > h2, #character2 > h2, #character3 > h2,
+#character4 > h2, #character5 > h2, #character6 > h2,
+#character7 > h2, #character8 > h2, #character9 > h2,
+#character10 > h2, #character11> h2, #character12 > h2{
+    max-width: 840px;
+    margin: auto;
 }
 
 #merchandizingLogo,
 #songListTitle {
     text-align: center;
-    color: var(--purple);
+    color: var(--pink);
 
     margin-top: 0%;
     margin-left: 7.25%;
     margin-right: 5%;
     margin-bottom: 1%;
     font-family: 'Final Fantasy 3/6 Font Regular', 'Press Start 2P', cursive;
-    font-size: 3.75rem;
+    font-size: 5rem;
+}
 
+#merchandizingLogo{
+    color:var(--orange);
+}
 
+#songListTitle {
+    color: var(--pink);
 }
 
 .songListItem{
     text-align: center;
-    color: var(--foreground);;
-    list-style-type: none;
+    color: var(--foreground);
+    list-style-type: upper-roman;
     padding-top: 2px;
     margin: 15px;
-
-    position: relative;
-
+    text-align: left;
+    list-style-position: inside;
     color: white;
+    size: 5rem;
+    font-style: underline;
+
+    border-bottom:1px solid var(--comment);
+    padding:5px;
+    margin-left: 5%;
 }
+
+.songListItem:hover,
+.songListItem:active,
+.songListItem:focus{
+    background-color: var(--currentLine);
+}
+
+
 
 .centered {
     position: absolute;
@@ -587,13 +613,14 @@ button {
 
 #tourScheduleHeader,
 #instructionsForAboutPage {
-    color: var(--menu-color);
+    color: var(--purple);
     display: block;
     text-align: center;
     width: 95%;
     margin: auto;
     padding: 0;
     padding-bottom: .5rem;
+    padding-left:2.5%;
 }
 
 .tourCard {
@@ -681,13 +708,6 @@ button {
     border-radius: 4px;
 }
 
-#cn-button{
-
-    background-color:var(--purple);
-    color: var(--background);
-
-}
-
 
 
 #cn-wrapper > ul > li:nth-child(1){
@@ -723,6 +743,10 @@ button {
 #cn-wrapper > ul > li:nth-child(7){
     color: var(--background);
     background-color: var(--menu-color);
+}
+
+#cn-wrapper > ul > li > a{
+    z-index: -1;
 }
 
 /*
@@ -772,7 +796,7 @@ caption{
 }
 
 li.songListItem:nth-child(odd){
-    color: var(--blue);
+    color: var(--cyan);
 }
 li.songListItem:nth-child(even){
     color: var(--green);
@@ -866,9 +890,9 @@ li { cursor: pointer; }
 
 .songLyrics{
     text-align: center;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
-    width: 35%;
+
 
 }
 
@@ -900,21 +924,83 @@ li { cursor: pointer; }
 .characterPicture{
     margin-bottom: 1rem;
     margin-top: -3rem;
+}
 
+.characterPicture > img{
+    z-index: 1001;
 }
 
 .characterCard:hover,
 .characterCard:active,
 .characterCard:focus {
-	background: -webkit-radial-gradient(transparent 33.3%, var(--blue) 35%);
-	background: -moz-radial-gradient(transparent 35%, var(--blue) 35%);
-	background: radial-gradient(transparent 35%, var(--blue) 35%);
+
+    background: -webkit-radial-gradient(var(--purple) 12.5%, var(--blue) 100%);
+	background: -moz-radial-gradient(var(--purple) 12.5%, var(--blue) 100%);
+	background:linear-gradient(0deg, var(--purple) 15.25%, var(--blue) 100%);
 	filter: contrast(135%);
-
-
 }
 
 h1{
-    text-shadow: 5px 11px #2d2a4b;
+    text-shadow: 2px 2px var(--purple);
     text-decoration: underline;
+    color: var(--background);
+}
+
+
+#cn-button{
+
+    background-color:var(--background);
+    color: var(--background);
+    pointer-events: none;
+
+}
+
+
+.songKeySignature{
+
+    color: var(--purple);
+    font-size: .75ch;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 1%;
+
+}
+
+#songList{
+    width: 45%;
+    margin: 0 auto;
+
+}
+
+#songListContainer{
+    margin: 0 auto;
+    display: table;
+
+
+    width:45%;
+    border:1px solid red;
+    padding:1em;
+    margin:0 auto;
+}
+
+.femaleCharacter{
+    color:var(--pink);
+}
+.maleCharacter{
+    color:var(--blue);
+}
+.shadyCharacter{
+    color:var(--currentLine);
+}
+.artifact{
+    color: var(--orange);
+}
+.monster{
+    color:var(--red);
+}
+.location{
+    color:var(--yellow);
+}
+.legendary{
+    color:var(--green);
 }
